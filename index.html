@@ -1,0 +1,1599 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<!-- Landing de Search (Google Ads) · Kids on Going · motor de variantes por palabra clave.
+     Identidad visual tomada del sitio en vivo kidsongoing.com.mx (Preahvihear + Poppins, verde salvia, olas, burbujas).
+     Las variantes viven en el script del hero; las páginas por grupo de anuncios se generan con
+     tools/generar_variantes.py (no editarlas a mano). -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guardería y Kínder bilingüe en Palo Alto | Kids on Going</title>
+<meta name="description" content="Guardería y kínder bilingüe SEP en Granjas Palo Alto, a minutos de Santa Fe. 22 cámaras en vivo, de 7:00 a 7:00 pm, desde 45 días. Agenda tu visita.">
+<meta name="robots" content="noindex, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guardería y Kínder bilingüe en Palo Alto | Kids on Going">
+<meta property="og:description" content="22 cámaras en vivo, de 7:00 a 7:00 pm, desde 45 días. Agenda tu visita al plantel.">
+<meta property="og:image" content="assets/img/atelier-1200.webp">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/brand/logo.png">
+<script>window.dataLayer = window.dataLayer || [];</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P3QLCQC6');</script>
+<!-- End Google Tag Manager -->
+<link rel="preload" as="image" href="assets/img/atelier-1200.webp" imagesrcset="assets/img/atelier-560.webp 560w, assets/img/atelier-1200.webp 1200w" imagesizes="(min-width: 1024px) 600px, 100vw" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Preahvihear&amp;family=Poppins:wght@400;500;600&amp;display=swap">
+<style>
+/* Tokens generados desde site_config.json (02_WEB_DEV.md §3.1) */
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F0F8F1;
+  --bg-inverse: #446047;
+  --surface-card: #FFFFFF;
+  --border-subtle: #DCE8DD;
+  --text-primary: #3F3F3F;
+  --text-secondary: #555555;
+  --text-inverse: #FFFFFF;
+  --text-muted: #666666;
+  --brand-primary: #5B805E;
+  --brand-secondary: #3B435D;
+  --accent-cta: #446047;
+  --accent-cta-hover: #35503A;
+  --accent-cta-text: #FFFFFF;
+  --highlight: #F1CB86;
+  --brand-green: #94C13F;
+  --success: #446047;
+  --warning: #B45309;
+  --error: #B3261E;
+  --whatsapp: #25D366;
+  --font-heading: 'Preahvihear', 'Poppins', sans-serif;
+  --font-body: 'Poppins', system-ui, sans-serif;
+  --font-mono: 'Poppins', system-ui, sans-serif;
+  --fs-display: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+  --fs-h1: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+  --fs-h2: clamp(1.625rem, 2.5vw + 0.5rem, 2.5rem);
+  --fs-h3: clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem);
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.75rem;
+  --lh-tight: 1.1;
+  --lh-heading: 1.2;
+  --lh-body: 1.6;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+  --tracking-heading: -0.02em;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --section-y: clamp(3.5rem, 8vw, 7rem);
+  --container-max: 1200px;
+  --container-narrow: 760px;
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --radius-sm: 8px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / 0.08);
+  --shadow-cta: 0 6px 20px rgb(248 161 31 / 0.35);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 400ms;
+  --bg-tertiary: #ECEFF7;
+  --brand-ink: #446047;
+  --pastel-apricot: #F1CB86;
+  --pastel-pistachio: #BFDD9D;
+  --pastel-lilac: #C99BCC;
+  --sky: #5AB0E3;
+  --radius-photo: 45px;
+  --brand-blue: #1167AE;
+  --brand-blue-soft: #E3EEF8;
+  --contrast: #F8A11F;
+  --contrast-hover: #E0870A;
+  --contrast-ink: #1F2124;
+}
+
+/* ============ Base · todo bajo .wd para convivir con GoHighLevel ============ */
+html { -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:88px; }
+body { margin:0; background:#fff; }
+html.is-locked { overflow:hidden; }
+.wd, .wd *, .wd *::before, .wd *::after { box-sizing:border-box; }
+.wd {
+  --ease-out:cubic-bezier(0.23, 1, 0.32, 1);
+  --ink:#3F3F3F; --sage:var(--brand-primary); --forest:var(--brand-ink); --navy:var(--brand-secondary);
+  --mint:var(--bg-secondary); --lav:var(--bg-tertiary);
+  --wave:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 38C160 6 320 6 480 26s300 40 470 22 330-50 490-30V64H0Z'/%3E%3C/svg%3E");
+  font-family:var(--font-body); font-size:1rem; line-height:1.65; color:var(--ink); background:#fff;
+  -webkit-font-smoothing:antialiased; -webkit-tap-highlight-color:transparent; overflow-x:clip;
+}
+.wd ::selection { background:var(--pastel-pistachio); color:#1F2A20; }
+.wd h1, .wd h2, .wd h3 { font-family:var(--font-heading); font-weight:600; letter-spacing:0; margin:0 0 .45em; text-wrap:balance; }
+.wd h1 { font-size:clamp(2.125rem, 2.6vw + 1.1rem, 3.2rem); line-height:1.12; color:var(--sage); }
+.wd h2 { font-size:clamp(1.65rem, 1.6vw + 1.05rem, 2.5rem); line-height:1.2; color:var(--sage); }
+.wd h3 { font-size:1.125rem; line-height:1.3; color:var(--navy); }
+.wd p { margin:0 0 1em; text-wrap:pretty; }
+.wd img { display:block; max-width:100%; height:auto; }
+.wd a { color:var(--brand-blue); text-underline-offset:3px; }
+.wd :focus-visible { outline:3px solid var(--sky); outline-offset:3px; border-radius:12px; }
+.wd .container { width:100%; max-width:1200px; margin-inline:auto; padding-inline:clamp(1.25rem, 4vw, 2.5rem); }
+.wd .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.wd .lead { font-size:1.125rem; color:var(--text-secondary); max-width:56ch; }
+.wd svg.ic { width:22px; height:22px; flex:none; }
+
+/* ============ Botones (píldora verde, como el sitio) ============ */
+.wd .btn { display:inline-flex; align-items:center; justify-content:center; gap:.6rem; min-height:54px; padding:.85rem 1.6rem; border-radius:var(--radius-pill); font:500 1rem/1.2 var(--font-heading); text-decoration:none; border:0; cursor:pointer; user-select:none; -webkit-user-select:none; touch-action:manipulation; transition:transform 140ms var(--ease-out), background-color 160ms var(--ease-out); }
+.wd .btn:active { transform:scale(.97); }
+.wd .btn--cta { background:var(--contrast); color:var(--contrast-ink); }
+.wd .btn--soft { background:var(--mint); color:var(--forest); }
+.wd .btn--block { width:100%; }
+.wd .is-mint .btn--soft, .wd .is-lav .btn--soft { background:#fff; }
+@media (hover:hover) {
+  .wd .btn--cta:hover { background:var(--contrast-hover); transform:translateY(-2px); box-shadow:0 12px 24px rgb(224 135 10 / .28); } /* taste-skill-ignore: estado hover (botón que se eleva), no en reposo */
+  .wd .btn--soft:hover { background:#E1F0E3; }
+}
+
+/* ============ Barra superior (blanca, como el sitio) ============ */
+.wd .topbar { position:sticky; top:0; z-index:40; background:#fff; padding-top:env(safe-area-inset-top); box-shadow:0 1px 0 rgb(68 96 71 / .08); } /* taste-skill-ignore: barra fija */
+.wd .topbar__in { display:flex; align-items:center; justify-content:space-between; gap:1rem; height:72px; }
+.wd .topbar__logo img { width:92px; height:64px; object-fit:contain; }
+.wd .topbar__right { display:flex; align-items:center; gap:1.25rem; }
+.wd .topbar__addr { display:none; font:400 1rem/1.3 var(--font-heading); color:var(--navy); }
+.wd .topbar__tel { display:inline-flex; align-items:center; gap:.45rem; min-height:44px; font:400 1rem/1 var(--font-heading); color:var(--navy); text-decoration:none; }
+.wd .topbar__tel svg { color:var(--sage); }
+.wd .topbar .btn { display:none; min-height:46px; padding:.6rem 1.3rem; font-size:1rem; }
+@media (min-width:860px) { .wd .topbar__addr { display:block; } }
+@media (min-width:1024px) { .wd .topbar .btn { display:inline-flex; } }
+
+/* ============ Hero ============ */
+.wd .hero { position:relative; padding-block:clamp(1.75rem, 4vw, 3.5rem) clamp(4rem, 7vw, 6rem); background:#fff; overflow:hidden; }
+.wd .hero::before { content:""; position:absolute; right:-8vw; top:-12vh; width:min(54vw, 660px); aspect-ratio:1; border-radius:50%; background:var(--lav); z-index:0; }
+.wd .hero > .container { position:relative; }
+.wd .floaters { position:absolute; inset:0; pointer-events:none; }
+.wd .floaters i { position:absolute; border-radius:50%; border:2px solid; opacity:.55; animation:kogFloat 11s ease-in-out infinite alternate; }
+.wd .floaters i:nth-child(1) { width:64px; height:64px; right:2%; top:3%; border-color:var(--brand-blue); }
+.wd .floaters i:nth-child(2) { width:22px; height:22px; right:31%; top:6%; border-color:var(--contrast); animation-duration:9s; }
+.wd .floaters i:nth-child(3) { width:38px; height:38px; right:3%; top:46%; border-color:#902F8B; animation-duration:13s; }
+.wd .floaters i:nth-child(4) { width:16px; height:16px; left:46%; top:3%; border-color:var(--brand-green); animation-duration:10s; }
+@keyframes kogFloat { to { transform:translate3d(0, -18px, 0); } }
+@media (max-width:1023.98px) { .wd .floaters { display:none; } } /* sin z-index: la hoja del chat (z 70) debe quedar sobre el fondo oscuro (z 60) */
+.wd .hero__grid { display:grid; gap:1.75rem; }
+.wd .hero__sub { font-size:1.125rem; color:var(--text-secondary); max-width:50ch; margin-bottom:.9rem; }
+.wd .hero__meta { display:flex; align-items:center; gap:.5rem; font:400 1rem/1.4 var(--font-heading); color:var(--forest); margin-bottom:1.5rem; }
+.wd .hero__meta svg { color:var(--sage); }
+@media (max-width:767.98px) { .wd .hero__meta { display:none; } }
+.wd .proof { display:flex; flex-wrap:wrap; gap:.5rem; list-style:none; margin:1.25rem 0 0; padding:0; }
+.wd .proof li { display:inline-flex; align-items:center; gap:.45rem; padding:.5rem .95rem; border-radius:var(--radius-pill); background:var(--mint); font-size:.8125rem; font-weight:500; color:var(--forest); }
+.wd .proof li i { width:9px; height:9px; border-radius:50%; flex:none; }
+
+/* Arranque de la conversación en el hero (móvil): cada respuesta ya es el CTA */
+.wd .starter { margin:0 0 1.75rem; padding:1.1rem; border-radius:var(--radius-lg); background:var(--mint); }
+.wd .starter__q { display:flex; gap:.7rem; align-items:flex-start; margin-bottom:.9rem; }
+.wd .starter__q img { width:40px; height:40px; border-radius:50%; background:#fff; object-fit:contain; padding:4px; flex:none; }
+.wd .starter__q p { margin:0; padding:.7rem .95rem; border-radius:6px 20px 20px 20px; background:#fff; font-size:1rem; line-height:1.45; }
+.wd .starter__chips { display:grid; grid-template-columns:1fr 1fr; gap:.5rem; }
+.wd .starter__chips .qbtn { background:#fff; }
+.wd .starter__more { margin:.85rem 0 0; font-size:.8125rem; text-align:center; color:var(--text-secondary); }
+@media (min-width:1024px) { .wd .starter { display:none; } }
+
+/* Cámaras en vivo: la "cosa viva" (elige la cámara) */
+.wd .cams-live { margin:0; }
+.wd .cams-live__view { position:relative; aspect-ratio:4 / 3; border-radius:var(--radius-photo); overflow:hidden; background:#DCE8DD; }
+.wd .cams-live__view img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 320ms var(--ease-out); }
+.wd .cams-live__view img.is-on { opacity:1; animation:kogKB 16s ease-in-out infinite alternate; }
+@keyframes kogKB { to { transform:scale(1.06); } }
+.wd .cams-live__tag { position:absolute; top:16px; left:16px; display:inline-flex; align-items:center; gap:.5rem; padding:.45rem .8rem; border-radius:var(--radius-pill); background:rgb(30 36 31 / .78); color:#fff; font:500 .8125rem/1 var(--font-body); font-variant-numeric:tabular-nums; }
+.wd .cams-live__dot { width:9px; height:9px; border-radius:50%; background:#FF5A4E; }
+.wd .cams-live__ex { padding:.25rem .65rem; border-radius:var(--radius-pill); background:rgb(30 36 31 / .72); color:#fff; font-size:.8125rem; }
+.wd .cams-live__feed { position:absolute; right:16px; bottom:16px; display:grid; gap:6px; justify-items:end; }
+.wd .cams-live__note { display:flex; align-items:center; gap:.45rem; padding:.5rem .8rem; border-radius:var(--radius-pill); background:#fff; color:var(--ink); font-size:.8125rem; font-weight:500; opacity:0; transform:translateY(8px); animation:kogIn 280ms var(--ease-out) forwards; }
+.wd .cams-live__note:nth-child(2) { animation-delay:600ms; }
+.wd .cams-live__note:nth-child(3) { animation-delay:950ms; }
+.wd .cams-live__note svg { width:16px; height:16px; color:var(--forest); }
+.wd .cams-live__tabs { display:flex; gap:.35rem; margin-top:.8rem; }
+.wd .cams-live__tabs::-webkit-scrollbar { display:none; }
+.wd .cams-live__tabs button { flex:none; min-height:44px; padding:.5rem .8rem; border:0; border-radius:var(--radius-pill); background:var(--mint); color:var(--forest); font:400 1rem/1 var(--font-heading); cursor:pointer; transition:background-color 160ms var(--ease-out), color 160ms var(--ease-out), transform 120ms var(--ease-out); }
+.wd .cams-live__tabs button:active { transform:scale(.96); }
+.wd .cams-live__tabs button[aria-selected="true"] { background:var(--forest); color:#fff; }
+.wd .cams-live figcaption { margin-top:.6rem; font-size:.8125rem; color:var(--text-secondary); }
+@keyframes kogIn { to { opacity:1; transform:none; } }
+
+@media (min-width:1024px) {
+  .wd .hero__grid { grid-template-columns:minmax(0, 1.12fr) minmax(370px, .88fr); gap:3.5rem; align-items:start; }
+}
+
+/* ============ Conversación de admisiones (no es un formulario) ============ */
+.wd .chat { display:flex; flex-direction:column; background:#fff; border-radius:var(--radius-lg); overflow:hidden; box-shadow:0 24px 60px rgb(40 60 42 / .16); } /* taste-skill-ignore: hoja/diálogo del chat, flota */
+.wd .chat__head { position:relative; display:flex; align-items:center; gap:.75rem; padding:.9rem 1.1rem; background:var(--forest); color:#fff; }
+.wd .chat__head img { width:44px; height:44px; border-radius:50%; background:#fff; object-fit:contain; padding:5px; flex:none; }
+.wd .chat__who { flex:1; min-width:0; }
+.wd .chat__who b { display:block; font:400 1.125rem/1.25 var(--font-heading); }
+.wd .chat__who span { display:flex; align-items:center; gap:.4rem; font-size:.8125rem; opacity:.92; }
+.wd .chat__who span::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--pastel-pistachio); }
+.wd .chat__close { display:none; width:44px; height:44px; border:0; border-radius:50%; background:rgb(255 255 255 / .12); color:#fff; cursor:pointer; place-items:center; }
+.wd .chat__grab { display:none; }
+.wd .chat__log { flex:1; display:flex; flex-direction:column; gap:.55rem; padding:1.1rem; background:var(--mint); overflow-y:auto; overscroll-behavior:contain; min-height:150px; max-height:380px; scroll-behavior:smooth; }
+.wd .chat__log > * { flex-shrink:0; }
+.wd .msg { max-width:88%; margin:0; padding:.7rem .95rem; font-size:1rem; line-height:1.45; animation:kogMsg 240ms var(--ease-out); }
+.wd .msg[hidden] { display:none; }
+.wd .msg--kog { align-self:flex-start; background:#fff; color:var(--ink); border-radius:6px 20px 20px 20px; }
+.wd .msg--me { align-self:flex-end; background:var(--forest); color:#fff; border-radius:20px 6px 20px 20px; }
+.wd .msg--gift { padding:0; overflow:hidden; }
+.wd .gift { display:flex; gap:.85rem; align-items:center; padding:.85rem .95rem; background:#FFF6E4; }
+.wd .gift__doc { position:relative; width:46px; height:58px; flex:none; border-radius:6px; background:#fff; }
+.wd .gift__doc::before { content:""; position:absolute; left:8px; right:8px; top:10px; height:14px; border-radius:4px; background:var(--pastel-apricot); }
+.wd .gift__doc::after { content:""; position:absolute; left:8px; right:14px; top:30px; height:4px; border-radius:2px; background:#DADADA; }
+.wd .gift b { display:block; font:400 1rem/1.3 var(--font-heading); color:var(--navy); }
+.wd .gift small { font-size:.8125rem; color:var(--text-secondary); }
+.wd .msg--gift p { margin:0; padding:.75rem .95rem; }
+.wd .typing { align-self:flex-start; display:inline-flex; gap:4px; padding:.85rem 1rem; border-radius:6px 20px 20px 20px; background:#fff; }
+.wd .typing[hidden] { display:none; }
+.wd .typing i { width:7px; height:7px; border-radius:50%; background:#9DB5A0; animation:kogDot 500ms 2 ease-in-out; }
+.wd .typing i:nth-child(2) { animation-delay:.15s; } .wd .typing i:nth-child(3) { animation-delay:.3s; }
+@keyframes kogMsg { from { opacity:0; transform:translateY(6px); } }
+@keyframes kogDot { 50% { transform:translateY(-3px); opacity:.5; } }
+
+.wd .chat__ctl { padding:.9rem 1.1rem 1.1rem; background:#fff; }
+.wd .chat__ctl > [hidden] { display:none; }
+.wd .quick { display:grid; grid-template-columns:1fr 1fr; gap:.5rem; }
+.wd .quick--2 { grid-template-columns:1fr; }
+.wd .qbtn { display:flex; flex-direction:column; justify-content:center; align-items:flex-start; min-height:54px; padding:.55rem 1rem; border:0; border-radius:18px; background:var(--mint); color:var(--forest); font:400 1rem/1.2 var(--font-heading); text-align:left; cursor:pointer; transition:background-color 150ms var(--ease-out), transform 120ms var(--ease-out); }
+.wd .qbtn small { font:400 .8125rem/1.3 var(--font-body); color:var(--text-secondary); margin-top:2px; }
+.wd .qbtn:active { transform:scale(.97); }
+@media (hover:hover) { .wd .qbtn:hover { background:#E1F0E3; } }
+.wd .compose { display:grid; gap:.5rem; }
+.wd .compose__row { position:relative; }
+.wd .compose input { display:block; width:100%; min-height:52px; padding:.8rem 1.1rem; border:0; border-radius:var(--radius-pill); background:var(--mint); font:400 16px/1.3 var(--font-body); color:var(--ink); caret-color:var(--forest); transition:background-color 140ms var(--ease-out); }
+.wd .compose input::placeholder { color:#6B6B6B; }
+.wd .compose input:focus { outline:none; box-shadow:0 0 0 3px var(--sage); background:#fff; } /* taste-skill-ignore: estado de foco */
+.wd .compose input[aria-invalid="true"] { box-shadow:0 0 0 2px var(--error); background:#fff; } /* taste-skill-ignore: estado de error */
+.wd .compose__tel input { padding-left:3.6rem; }
+.wd .compose__tel span { position:absolute; left:1.1rem; top:50%; transform:translateY(-50%); font-weight:500; color:var(--text-secondary); pointer-events:none; }
+.wd .compose .btn { margin-top:.15rem; }
+.wd .err { display:block; margin:.1rem .4rem 0; font-size:.8125rem; font-weight:500; color:var(--error); }
+.wd .err:empty { display:none; }
+.wd .chat__skip { display:block; width:100%; margin-top:.25rem; min-height:44px; border:0; background:none; color:var(--forest); font:500 1rem/1.2 var(--font-body); text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+.wd .chat__legal { margin:.75rem 0 0; font-size:.8125rem; line-height:1.45; color:var(--text-muted); }
+.wd .chat__legal a { color:var(--text-muted); }
+
+.wd .scrim { position:fixed; inset:0; z-index:60; background:rgb(25 35 27 / .45); opacity:0; visibility:hidden; pointer-events:none; transition:opacity 240ms var(--ease-out), visibility 0s linear 240ms; }
+.wd .scrim.is-open { opacity:1; visibility:visible; pointer-events:auto; transition:opacity 240ms var(--ease-out), visibility 0s; }
+
+@media (max-width:1023.98px) {
+  .wd .chat { position:fixed; left:0; right:0; bottom:0; z-index:70; max-height:94dvh; border-radius:var(--radius-lg) var(--radius-lg) 0 0; transform:translateY(105%); visibility:hidden; transition:transform 320ms var(--ease-out), visibility 0s linear 320ms; }
+  .wd .chat.is-open { transform:none; visibility:visible; transition:transform 320ms var(--ease-out), visibility 0s; }
+  .wd .chat__grab { display:block; position:absolute; top:6px; left:50%; width:40px; height:5px; margin-left:-20px; border-radius:3px; background:rgb(255 255 255 / .5); z-index:1; }
+  .wd .chat__head { padding-top:1.1rem; }
+  .wd .chat__close { display:inline-grid; }
+  .wd .chat__log { max-height:none; min-height:180px; }
+  .wd .chat__ctl { padding-bottom:calc(1.1rem + env(safe-area-inset-bottom)); }
+}
+@media (min-width:1024px) {
+  .wd .chat { position:sticky; top:96px; }
+  .wd .scrim { display:none; }
+}
+
+/* ============ Bloques con ola (el motivo del sitio) ============ */
+.wd .block { position:relative; padding-block:clamp(3.5rem, 7vw, 6.5rem); background:#fff; }
+.wd .block::before { content:""; position:absolute; left:0; right:0; top:-46px; height:48px; background:inherit; -webkit-mask:var(--wave) center / 100% 100% no-repeat; mask:var(--wave) center / 100% 100% no-repeat; pointer-events:none; }
+.wd .block.is-mint { background:var(--mint); }
+.wd .block.is-lav { background:var(--lav); }
+.wd .block[hidden] { display:none; }
+.wd .split { display:grid; gap:2.25rem; align-items:center; }
+@media (min-width:900px) { .wd .split { grid-template-columns:1fr 1fr; gap:4.5rem; } .wd .split--rev > :first-child { order:2; } }
+.wd .block__cta { margin-top:1.75rem; display:flex; flex-wrap:wrap; gap:.75rem; }
+.wd .photo { border-radius:var(--radius-photo); overflow:hidden; background:#DCE8DD; }
+.wd .photo img { width:100%; height:100%; object-fit:cover; }
+
+/* Lista con burbujas (viñeta = el motivo) */
+.wd .ticks { list-style:none; margin:0 0 1rem; padding:0; display:grid; gap:.85rem; }
+.wd .ticks li { display:flex; gap:.8rem; align-items:flex-start; }
+.wd .ticks li::before { content:""; width:14px; height:14px; margin-top:.42em; border-radius:50%; flex:none; background:var(--pastel-pistachio); }
+.wd .ticks li:nth-child(3n+2)::before { background:var(--pastel-apricot); }
+.wd .ticks li:nth-child(3n)::before { background:var(--pastel-lilac); }
+.wd .ticks li:nth-child(4n)::before { background:var(--brand-blue-soft); }
+.wd .ticks b { font-weight:600; color:var(--navy); }
+
+/* Ubicación */
+.wd .addr { display:flex; gap:.8rem; align-items:flex-start; margin-bottom:1.25rem; font-size:1rem; }
+.wd .addr svg { color:var(--sage); margin-top:3px; }
+.wd .addr p { margin:0; }
+.wd .addr b { font:400 1.125rem/1.35 var(--font-heading); color:var(--navy); }
+.wd .zones { display:flex; flex-wrap:wrap; gap:.45rem; list-style:none; padding:0; margin:0 0 1.25rem; }
+.wd .zones li { padding:.45rem .9rem; border-radius:var(--radius-pill); background:#fff; font-size:.8125rem; font-weight:500; color:var(--forest); }
+.wd .block:not(.is-mint):not(.is-lav) .zones li { background:var(--mint); }
+.wd .zones li.is-hit { background:var(--forest); color:#fff; }
+.wd .map { margin:0; border-radius:var(--radius-photo); overflow:hidden; background:#E7F1F9; }
+.wd .map svg { display:block; width:100%; height:auto; }
+.wd .map figcaption { padding:.65rem 1.25rem .8rem; font-size:.8125rem; color:var(--text-secondary); background:#fff; }
+
+/* App KoG (fragmento de interfaz, ilustración) */
+.wd .phone { position:relative; width:min(300px, 80vw); margin-inline:auto; padding:11px; border-radius:42px; background:#26302A; box-shadow:0 30px 60px rgb(30 45 32 / .25); } /* taste-skill-ignore: fragmento de interfaz (App KoG) */
+.wd .phone__screen { border-radius:32px; overflow:hidden; background:#F7FAF7; padding:14px 12px 16px; }
+.wd .phone__bar { display:flex; justify-content:space-between; align-items:center; font:400 .8125rem/1 var(--font-heading); color:var(--forest); margin:4px 6px 12px; }
+.wd .phone__bar span:last-child { font:500 .8125rem/1 var(--font-body); color:#B3261E; }
+.wd .appcams { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-bottom:12px; }
+.wd .appcam { position:relative; aspect-ratio:4 / 3; border-radius:12px; overflow:hidden; background:#fff; padding:3px; }
+.wd .appcam img { border-radius:9px; }
+.wd .appcam img { width:100%; height:100%; object-fit:cover; }
+.wd .appcam span { position:absolute; left:6px; bottom:6px; padding:2px 7px; border-radius:var(--radius-pill); background:rgb(30 36 31 / .75); color:#fff; font:500 .8125rem/1.5 var(--font-body); }
+.wd .log { list-style:none; margin:0; padding:0; display:grid; gap:6px; }
+.wd .log li { display:flex; align-items:center; gap:.6rem; padding:.55rem .75rem; border-radius:14px; background:#fff; font-size:.8125rem; }
+.wd .log time { font-weight:500; color:var(--text-muted); font-variant-numeric:tabular-nums; min-width:38px; }
+.wd .log svg { margin-left:auto; width:18px; height:18px; color:var(--forest); }
+.wd .phone__cap { text-align:center; margin-top:1rem; font-size:.8125rem; color:var(--text-secondary); }
+
+/* Horario */
+.wd .tl { position:relative; margin:2.25rem 0 1.25rem; }
+.wd .tl__track { position:relative; height:16px; border-radius:8px; background:#fff; }
+.wd .block:not(.is-mint):not(.is-lav) .tl__track { background:var(--mint); }
+.wd .tl__nurse { position:absolute; top:0; bottom:0; left:33.33%; right:0; border-radius:8px; background:var(--pastel-pistachio); }
+.wd .tl__stop { position:absolute; top:50%; width:26px; height:26px; margin:-13px 0 0 -13px; border-radius:50%; background:var(--pastel-apricot); border:4px solid var(--forest); }
+.wd .tl__lbl { position:absolute; top:30px; transform:translateX(-50%); font:400 1rem/1.2 var(--font-heading); color:var(--navy); white-space:nowrap; text-align:center; }
+.wd .tl__lbl small { display:block; font:400 .8125rem/1.3 var(--font-body); color:var(--text-secondary); }
+.wd .tl__ends { display:flex; justify-content:space-between; margin-top:3.8rem; font-size:.8125rem; font-weight:500; color:var(--text-secondary); }
+.wd .tl__exits { display:none; list-style:none; margin:0 0 1.25rem; padding:0; flex-wrap:wrap; gap:.45rem; }
+.wd .tl__exits li { padding:.4rem .85rem; border-radius:var(--radius-pill); background:var(--pastel-apricot); color:#2D3A2E; font-size:1rem; font-family:var(--font-heading); }
+@media (max-width:599.98px) { .wd .tl__lbl { display:none; } .wd .tl__ends { margin-top:.6rem; } .wd .tl__exits { display:flex; } .wd .tl { margin-bottom:.9rem; } }
+.wd .tl__legend { display:flex; flex-wrap:wrap; gap:1.1rem; font-size:.8125rem; color:var(--text-secondary); margin-bottom:1.5rem; }
+.wd .tl__legend span { display:inline-flex; align-items:center; gap:.45rem; }
+.wd .tl__legend i { width:14px; height:14px; border-radius:50%; display:inline-block; }
+.wd .facts { display:grid; gap:1rem 2rem; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); }
+.wd .fact b { display:block; font:400 1.125rem/1.3 var(--font-heading); color:var(--navy); }
+.wd .fact span { font-size:1rem; color:var(--text-secondary); }
+
+/* Bilingüe: columnas con burbuja pastel (como las del sitio) */
+.wd .bubbles { display:grid; gap:2rem; margin-top:2.25rem; }
+@media (min-width:860px) { .wd .bubbles { grid-template-columns:repeat(3, 1fr); text-align:center; } .wd .bubble__ic { margin-inline:auto; } }
+.wd .bubble__ic { width:84px; height:84px; border-radius:50%; display:grid; place-items:center; margin-bottom:1rem; color:#2D3A2E; }
+.wd .bubble__ic svg { width:36px; height:36px; }
+.wd .bubbles h3 { margin-bottom:.35rem; }
+.wd .bubbles p { margin:0; color:var(--text-secondary); max-width:34ch; }
+@media (min-width:860px) { .wd .bubbles p { margin-inline:auto; } }
+
+/* Kínder SEP */
+.wd .sep { display:flex; align-items:center; gap:1rem; padding:1.1rem 1.35rem; border-radius:var(--radius-lg); background:#fff; margin:1.25rem 0 1.5rem; }
+.wd .block:not(.is-mint):not(.is-lav) .sep { background:var(--mint); }
+.wd .sep__ic { width:52px; height:52px; border-radius:50%; background:var(--pastel-lilac); display:grid; place-items:center; color:#2D3A2E; flex:none; }
+.wd .sep b { display:block; font:400 1.125rem/1.3 var(--font-heading); color:var(--navy); }
+.wd .sep span { font-size:.8125rem; color:var(--text-secondary); }
+
+/* Etapas: lista con burbuja de edad */
+.wd .stages { list-style:none; margin:2rem 0 0; padding:0; display:grid; gap:.75rem; }
+@media (min-width:900px) { .wd .stages { grid-template-columns:1fr 1fr; gap:1rem 2.5rem; } }
+.wd .stage { display:grid; grid-template-columns:auto 1fr; gap:1rem; align-items:center; padding:.9rem 1rem .9rem .9rem; border-radius:var(--radius-lg); background:#fff; }
+.wd .block:not(.is-mint):not(.is-lav) .stage { background:var(--mint); }
+.wd .stage__age { width:86px; height:86px; border-radius:50%; display:grid; place-items:center; text-align:center; font:400 .8125rem/1.15 var(--font-heading); color:#2D3A2E; padding:.5rem; }
+.wd .stage h3 { margin:0 0 .15rem; }
+.wd .stage p { margin:0 0 .4rem; font-size:1rem; color:var(--text-secondary); }
+.wd .stage button { text-align:left; padding:0; min-height:36px; border:0; background:none; font:500 1rem/1.2 var(--font-body); color:var(--forest); text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+
+/* Instalaciones */
+.wd .gallery { display:grid; grid-template-columns:1fr 1fr; gap:1rem .75rem; margin-top:2rem; }
+.wd .gallery::-webkit-scrollbar { display:none; }
+.wd .gallery figure { margin:0; scroll-snap-align:start; }
+.wd .gallery img { width:100%; aspect-ratio:4 / 5; object-fit:cover; border-radius:var(--radius-photo); background:#DCE8DD; }
+.wd .gallery figcaption { margin-top:.6rem; font:400 1.125rem/1.3 var(--font-heading); color:var(--navy); text-align:center; }
+@media (min-width:900px) { .wd .gallery { grid-template-columns:repeat(4, 1fr); gap:1.25rem; } }
+
+/* FAQ: mosaicos rellenos */
+.wd .faqwrap { display:grid; gap:1.5rem; }
+@media (min-width:960px) { .wd .faqwrap { grid-template-columns:1fr 2fr; gap:3rem; } .wd .faqwrap > div:first-child { position:sticky; top:110px; align-self:start; } }
+.wd .faq { display:grid; gap:.6rem; }
+.wd .faq details { border-radius:22px; background:#fff; transition:background-color 200ms var(--ease-out); }
+.wd .block:not(.is-mint):not(.is-lav) .faq details { background:var(--mint); }
+.wd .faq details[open] { background:var(--forest) !important; color:#fff; }
+.wd .faq summary { display:flex; justify-content:space-between; align-items:center; gap:1rem; min-height:64px; padding:1rem 1.35rem; cursor:pointer; list-style:none; font:400 1.125rem/1.35 var(--font-heading); color:var(--navy); }
+.wd .faq details[open] summary { color:#fff; }
+.wd .faq summary::-webkit-details-marker { display:none; }
+.wd .faq summary i { position:relative; width:16px; height:16px; flex:none; }
+.wd .faq summary i::before, .wd .faq summary i::after { content:""; position:absolute; left:0; top:6.5px; width:16px; height:3px; border-radius:2px; background:currentColor; transition:transform 220ms var(--ease-out); }
+.wd .faq summary i::after { transform:rotate(90deg); }
+.wd .faq details[open] summary i::after { transform:rotate(0); }
+.wd .faq details p { padding:0 1.35rem 1.2rem; margin:0; max-width:60ch; color:var(--text-secondary); }
+.wd .faq details[open] p { color:#F2F7F2; }
+.wd .faq.is-collapsed details.is-extra { display:none; }
+.wd .faq__more { margin-top:1rem; }
+
+/* Cierre: la banda entera es el enlace */
+.wd .close { position:relative; display:block; padding-block:clamp(4rem, 9vw, 6.5rem); background:var(--forest); color:#fff; text-align:center; text-decoration:none; transition:background-color 200ms var(--ease-out); }
+.wd .close::before { content:""; position:absolute; left:0; right:0; top:-46px; height:48px; background:inherit; -webkit-mask:var(--wave) center / 100% 100% no-repeat; mask:var(--wave) center / 100% 100% no-repeat; }
+@media (hover:hover) { .wd .close:hover { background:var(--accent-cta-hover); } .wd .close:hover .close__btn { transform:translateY(-2px); } }
+.wd .close:active .close__btn { transform:scale(.97); }
+.wd .close h2 { color:#fff; max-width:24ch; margin-inline:auto; }
+.wd .close p { max-width:50ch; margin:0 auto 1.6rem; color:#EEF5EF; }
+.wd .close__btn { display:inline-flex; align-items:center; gap:.6rem; min-height:56px; padding:.9rem 1.8rem; border-radius:var(--radius-pill); background:var(--contrast); color:var(--contrast-ink); font:500 1.125rem/1.2 var(--font-heading); transition:transform 160ms var(--ease-out); }
+
+/* Footer */
+.wd .foot { background:var(--navy); color:#E3E6EE; padding-block:2.75rem calc(6.5rem + env(safe-area-inset-bottom)); font-size:.8125rem; line-height:1.65; }
+.wd .foot a { color:#fff; }
+.wd .foot p { margin:0 0 .6rem; max-width:92ch; }
+.wd .foot__grid { display:grid; gap:2rem; }
+@media (min-width:900px) { .wd .foot__grid { grid-template-columns:1.6fr 1fr; gap:4rem; align-items:start; } }
+.wd .foot__big { font:400 1.75rem/1.2 var(--font-heading); color:#fff; margin-bottom:.4rem !important; }
+.wd .foot__btn { background:#fff; color:var(--forest); margin:.4rem 0 .75rem; }
+@media (hover:hover) { .wd .foot__btn:hover { background:var(--mint); } }
+.wd .foot__logo { width:110px; height:auto; margin-bottom:1.25rem; padding:8px 12px; border-radius:18px; background:#fff; }
+@media (min-width:1024px) { .wd .foot { padding-bottom:2.75rem; } }
+
+/* Barra fija móvil */
+.wd .dock { position:fixed; left:0; right:0; bottom:0; z-index:50; display:flex; gap:.6rem; padding:.65rem clamp(1.25rem, 4vw, 2.5rem) calc(.65rem + env(safe-area-inset-bottom)); background:#fff; box-shadow:0 -8px 24px rgb(30 45 32 / .10); transform:translateY(110%); transition:transform 260ms var(--ease-out); } /* taste-skill-ignore: barra fija */
+.wd .dock.is-on { transform:none; }
+.wd .dock .btn--cta { flex:1; }
+.wd .dock__tel { width:54px; padding:0; flex:none; }
+@media (max-width:400px) { .wd .dock .btn--cta { font-size:1rem; padding-inline:1rem; } }
+@media (min-width:1024px) { .wd .dock { display:none; } }
+
+/* Banda de datos en el color secundario (azul del logo) */
+.wd .stats { position:relative; padding-block:clamp(2.75rem, 5vw, 4rem); background:var(--brand-blue); color:#fff; }
+.wd .stats::before { content:""; position:absolute; left:0; right:0; top:-46px; height:48px; background:inherit; -webkit-mask:var(--wave) center / 100% 100% no-repeat; mask:var(--wave) center / 100% 100% no-repeat; }
+.wd .stats__list { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:1.75rem 1.5rem; }
+@media (min-width:900px) { .wd .stats__list { grid-template-columns:repeat(4, 1fr); } }
+.wd .stats__list b { display:block; font:400 clamp(1.65rem, 1.6vw + 1.05rem, 2.5rem)/1.1 var(--font-heading); font-variant-numeric:tabular-nums; color:#fff; }
+.wd .stats__list b::after { content:""; display:block; width:28px; height:5px; margin-top:.55rem; border-radius:3px; background:var(--contrast); }
+.wd .stats__list span { display:block; margin-top:.5rem; font-size:1rem; color:var(--brand-blue-soft); }
+.wd .topbar__progress { position:absolute; left:0; bottom:0; height:3px; width:100%; background:var(--contrast); transform-origin:0 50%; transform:scaleX(0); }
+
+/* Entradas al hacer scroll (el contenido es visible si el script falla) */
+.wd.js-reveal [data-rise] { opacity:0; transform:translateY(22px); transition:opacity 520ms var(--ease-out), transform 520ms var(--ease-out); transition-delay:var(--d, 0ms); }
+.wd.js-reveal [data-rise].is-in { opacity:1; transform:none; }
+
+/* Movimiento reducido: solo se apaga lo intrusivo (bucles y desplazamientos grandes).
+   Windows trae esta preferencia activa por defecto; las microinteracciones y los fundidos se conservan. */
+@media (prefers-reduced-motion:reduce) {
+  .wd .floaters i, .wd .cams-live__view img.is-on { animation:none; }
+  .wd.js-reveal [data-rise] { transform:none; }
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Kids on Going (KoG)", "url": "https://kidsongoing.com.mx/", "email": "informes@kidsongoing.com.mx"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto cuesta la colegiatura?", "acceptedAnswer": {"@type": "Answer", "text": "Depende de la etapa y del horario de salida. Te enviamos el brochure de costos por WhatsApp en minutos. Si tu empresa tiene convenio con nosotros (+50 empresas, TDU o CAMEXA), aplicas a precio preferencial de hasta 15%."}}, {"@type": "Question", "name": "¿Puedo ver a mi bebé durante el día?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Tienes acceso desde tu celular a 22 cámaras en tiempo real y a la App KoG, donde registramos biberones, pañales, siestas, comidas y actividades. En tu visita te lo mostramos funcionando."}}, {"@type": "Question", "name": "Si es Reggio Emilia, ¿solo juegan?", "acceptedAnswer": {"@type": "Answer", "text": "Juegan con estructura: el kínder está incorporado a la SEP (CCT 09PJN0093I), trabajamos robótica con Bee-Bot, inglés diario y Kids&Us desde Kínder 1. Aprenden desde su curiosidad, con objetivos claros por etapa."}}, {"@type": "Question", "name": "¿Qué pasa si mi horario cambia?", "acceptedAnswer": {"@type": "Answer", "text": "Abrimos de 7:00 am a 7:00 pm con 4 salidas: 1:00, 4:00, 5:30 y 7:00 pm. Por la tarde hay talleres vespertinos para que tu peque siga estimulado."}}, {"@type": "Question", "name": "¿Cuántos niños hay por grupo y cambian mucho las misses?", "acceptedAnswer": {"@type": "Answer", "text": "Trabajamos con grupos pequeños, de alrededor de 12 niños, y un equipo estable acompañado de cerca por la Directora."}}, {"@type": "Question", "name": "¿No conviene un colegio grande desde kínder?", "acceptedAnswer": {"@type": "Answer", "text": "Los primeros 6 años piden un entorno especializado en primera infancia, donde tu peque sea el centro. Te ayudamos a preparar la transición a la primaria que elijas."}}, {"@type": "Question", "name": "¿Y si se enferma? ¿Qué come?", "acceptedAnswer": {"@type": "Answer", "text": "Contamos con enfermera en planta de 11:00 a 7:00 pm, comedor con menú balanceado y un jardín de 700 m² para jugar al aire libre todos los días."}}, {"@type": "Question", "name": "¿Desde qué edad reciben y cuándo puede entrar?", "acceptedAnswer": {"@type": "Answer", "text": "Desde los 45 días de nacido hasta Kínder 3 (6 años). La guardería recibe todo el año según cupo; el kínder, para el ciclo en curso o el siguiente."}}]}]}</script>
+</head>
+<body data-page-type="admisiones">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3QLCQC6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wd" id="kog" data-variant-default="general" data-wa="5215561167213" >
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.2 4.2L19 7"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 7 7l1.4-2.3L21 15.5V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 12 20 4l-4 16-4-6-8-2Z"/><path fill="none" stroke="currentColor" stroke-width="2" d="m12 14 8-10"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 5h16v11H9l-5 4V5Z"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 9.5h8M8 12.5h5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6-4.5-4.2 6.1-.8L12 3Z"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="11" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="12.5" r="1.4" fill="currentColor"/><circle cx="15" cy="12.5" r="1.4" fill="currentColor"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7V4"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M2 9l10-5 10 5-10 5L2 9Z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <span class="topbar__progress" id="progress" aria-hidden="true"></span>
+  <div class="container topbar__in">
+    <a class="topbar__logo" href="#top" aria-label="Kids on Going, inicio"><img src="assets/brand/logo.png" alt="Kids on Going, centro de desarrollo infantil" width="92" height="64"></a>
+    <div class="topbar__right">
+      <span class="topbar__addr">Calle Fresnos 87, Granjas Palo Alto</span>
+      <a class="topbar__tel" href="tel:+525561167213" data-phone="topbar"><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg>55 6116 7213</a>
+      <button class="btn btn--cta" type="button" data-open-lead data-cta="topbar"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agendar visita</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="floaters" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1 data-v-text="h1" data-dtr="h">Ves a tu peque en vivo, de 7 a 7</h1>
+        <p class="hero__sub" data-v-text="sub">Guardería y kínder bilingüe en Granjas Palo Alto, a minutos de Santa Fe y Bosques: 22 cámaras en tiempo real, inglés diario y Kínder incorporado a la SEP.</p>
+        <p class="hero__meta"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span data-v-text="meta">Granjas Palo Alto, Cuajimalpa · de 45 días a 6 años</span></p>
+        <script>
+        /* Variante resuelta ANTES de pintar: sin parpadeo ni CLS en el H1. */
+        (function () {
+          var root = document.getElementById('kog');
+          var V = {
+            "general": { "meta": "Granjas Palo Alto, Cuajimalpa · de 45 días a 6 años", "h1": "Ves a tu peque en vivo, de 7 a 7", "sub": "Guardería y kínder bilingüe en Granjas Palo Alto, a minutos de {zona}: 22 cámaras en tiempo real, inglés diario y Kínder incorporado a la SEP.", "blocks": ["camaras", "horario", "etapas", "cerca", "instalaciones", "faq"], "faq": [1, 2, 3, 4, 5, 6, 7, 8], "stage": "", "tipo": "guardería o kínder", "interes": "guardería / kínder", "title": "Guardería y Kínder bilingüe en Palo Alto | Kids on Going" },
+            "guarderia-cerca": { "meta": "Guardería en Granjas Palo Alto, Cuajimalpa · desde 45 días", "h1": "La guardería cerca que ves en vivo", "sub": "A minutos de {zona}: 22 cámaras desde tu celular, abierta de 7:00 a 7:00 pm y con 4 horarios de salida.", "blocks": ["cerca", "camaras", "horario", "etapas", "instalaciones", "faq"], "faq": [1, 2, 8, 4, 7, 5, 3, 6], "stage": "", "tipo": "guardería", "interes": "la guardería", "title": "Guardería cerca de ti en Palo Alto, Cuajimalpa | Kids on Going" },
+            "kinder-cerca": { "meta": "Kínder incorporado a la SEP · 3 a 6 años · Granjas Palo Alto", "h1": "Kínder SEP cerca de ti, hasta las 7", "sub": "En Granjas Palo Alto, a minutos de {zona}. Grupos de alrededor de 12 niños, inglés diario y Kids&Us desde Kínder 1.", "blocks": ["cerca", "kinder", "horario", "bilingue", "instalaciones", "faq"], "faq": [1, 3, 4, 5, 6, 2, 7, 8], "stage": "kinder", "tipo": "kínder", "interes": "el kínder", "title": "Kínder SEP cerca de ti en Palo Alto, Cuajimalpa | Kids on Going" },
+            "kinder-bilingue": { "meta": "Kínder bilingüe incorporado a la SEP · Granjas Palo Alto", "h1": "Kínder bilingüe con inglés diario", "sub": "Kids&Us desde Kínder 1 y Reggio Emilia con estructura: Bee-Bot, Atelier y Huerto, en grupos de alrededor de 12 niños. A minutos de {zona}.", "blocks": ["bilingue", "kinder", "instalaciones", "horario", "cerca", "faq"], "faq": [3, 1, 6, 5, 4, 2, 7, 8], "stage": "kinder", "tipo": "kínder", "interes": "el kínder bilingüe", "title": "Kínder bilingüe SEP en Palo Alto, Cuajimalpa | Kids on Going" },
+            "guarderia-bilingue": { "meta": "Guardería bilingüe desde 45 días · Granjas Palo Alto", "h1": "Guardería bilingüe desde bebés", "sub": "Inglés todos los días desde los 45 días, y tú lo ves en vivo: 22 cámaras y bitácora minuto a minuto en la App KoG.", "blocks": ["bilingue", "camaras", "etapas", "horario", "cerca", "faq"], "faq": [1, 2, 8, 7, 4, 5, 3, 6], "stage": "", "tipo": "guardería", "interes": "la guardería bilingüe", "title": "Guardería bilingüe en Palo Alto, Cuajimalpa | Kids on Going" },
+            "maternal": { "meta": "Maternal y estimulación temprana · 45 días a 3 años", "h1": "Maternal cerca de ti, con bitácora", "sub": "Estimulación temprana, sala multisensorial y huerto en Granjas Palo Alto. Biberón, pañal y siesta registrados minuto a minuto en la App KoG.", "blocks": ["etapas", "camaras", "horario", "cerca", "instalaciones", "faq"], "faq": [8, 2, 7, 1, 4, 5, 3, 6], "stage": "", "tipo": "maternal", "interes": "maternal / estimulación temprana", "title": "Maternal y estimulación temprana en Palo Alto | Kids on Going" }
+          };
+          var ZONAS = { santafe: "Santa Fe", bosques: "Bosques de las Lomas", cuajimalpa: "Cuajimalpa", vistahermosa: "Lomas de Vista Hermosa", contadero: "El Contadero", interlomas: "Interlomas" };
+          function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[+_]/g, ' '); }
+          function inferVariant(t) {
+            t = norm(t); if (!t) return '';
+            var bil = /biling|ingles/.test(t), kin = /kinder|kindergarden|preescolar|jardin de ni|\bk[123]\b/.test(t),
+                mat = /maternal|estimulacion|lactante|bebe|toddler/.test(t), gua = /guarder|estancia|daycare/.test(t);
+            if (bil && kin) return 'kinder-bilingue';
+            if (bil) return 'guarderia-bilingue';
+            if (mat) return 'maternal';
+            if (kin) return 'kinder-cerca';
+            if (gua) return 'guarderia-cerca';
+            return '';
+          }
+          function inferZona(t) {
+            t = norm(t);
+            if (/santa fe/.test(t)) return 'santafe';
+            if (/bosques/.test(t)) return 'bosques';
+            if (/vista hermosa/.test(t)) return 'vistahermosa';
+            if (/contadero/.test(t)) return 'contadero';
+            if (/interlomas|huixquilucan/.test(t)) return 'interlomas';
+            if (/cuajimalpa|palo alto/.test(t)) return 'cuajimalpa';
+            return '';
+          }
+          var q = new URLSearchParams(location.search);
+          var kw = q.get('kw') || q.get('utm_term') || '';
+          var v = (q.get('v') || '').toLowerCase(), source = 'param';
+          if (!V[v]) { v = inferVariant(kw); source = 'keyword'; }
+          if (!V[v]) { v = root.getAttribute('data-variant-default') || 'general'; source = 'page'; }
+          if (!V[v]) { v = 'general'; source = 'fallback'; }
+          var loc = (q.get('loc') || '').toLowerCase();
+          if (!ZONAS[loc]) loc = inferZona(kw);
+          var zona = ZONAS[loc] || 'Santa Fe y Bosques';
+          var cfg = V[v];
+          root.setAttribute('data-v', v);
+          window.KOG = { variants: V, variant: v, source: source, cfg: cfg, kw: kw.slice(0, 80), loc: loc, zona: zona, inferVariant: inferVariant };
+          var nodes = root.querySelectorAll('[data-v-text]');
+          for (var i = 0; i < nodes.length; i++) {
+            var key = nodes[i].getAttribute('data-v-text');
+            if (cfg[key]) nodes[i].textContent = cfg[key].replace('{zona}', zona);
+          }
+          if (cfg.title) document.title = cfg.title;
+          root.classList.add('js-reveal');
+        })();
+        </script>
+
+        <div class="starter" aria-labelledby="starter-q">
+          <div class="starter__q"><img src="assets/brand/logo.png" alt="" width="40" height="40"><p id="starter-q">¡Hola! Para enviarte la información exacta, ¿qué edad tiene tu peque?</p></div>
+          <div class="starter__chips">
+            <button class="qbtn" type="button" data-open-lead data-stage="bebes" data-cta="hero_bebes">Bebé<small>45 días a 1 año</small></button>
+            <button class="qbtn" type="button" data-open-lead data-stage="toddlers" data-cta="hero_toddlers">1 a 2 años<small>Toddlers</small></button>
+            <button class="qbtn" type="button" data-open-lead data-stage="discovery" data-cta="hero_discovery">2 a 3 años<small>Discovery Preschool</small></button>
+            <button class="qbtn" type="button" data-open-lead data-stage="kinder" data-cta="hero_kinder">3 a 6 años<small>Kínder 1, 2 y 3</small></button>
+          </div>
+          <p class="starter__more">Agenda tu recorrido de 45 min por WhatsApp, sin compromiso</p>
+        </div>
+
+        <figure class="cams-live" aria-label="Cámaras del plantel">
+          <div class="cams-live__view">
+            <img class="is-on" data-cam="atelier" src="assets/img/atelier-1200.webp" srcset="assets/img/atelier-560.webp 560w, assets/img/atelier-1200.webp 1200w" sizes="(min-width: 1024px) 600px, 100vw" width="1200" height="900" alt="Atelier de Kids on Going con mesas de trabajo, caballetes y libreros de madera" fetchpriority="high" decoding="async">
+            <img data-cam="aula" src="assets/img/aula-560.webp" width="560" height="420" alt="Aula con mesa central, piso de madera y trabajos de los niños" loading="lazy" decoding="async">
+            <img data-cam="jardin" src="assets/img/jardin-560.webp" width="560" height="700" alt="Rueda de la fortuna decorativa en el jardín de Kids on Going" loading="lazy" decoding="async">
+            <img data-cam="huerto" src="assets/img/huerto-560.webp" width="560" height="700" alt="Niño con sombrero cuidando lechugas en el huerto" loading="lazy" decoding="async">
+            <span class="cams-live__tag"><i class="cams-live__dot" aria-hidden="true"></i>Así se ve en la App · <span data-cam-name>Atelier</span></span>
+            <span class="cams-live__feed" aria-hidden="true">
+              <span class="cams-live__ex">Ejemplo de bitácora</span>
+              <span class="cams-live__note"><svg><use href="#i-check"/></svg>11:30 Alimento completo</span>
+              <span class="cams-live__note"><svg><use href="#i-check"/></svg>13:15 Siesta iniciada</span>
+            </span>
+          </div>
+          <div class="cams-live__tabs" role="tablist" aria-label="Elige una cámara">
+            <button type="button" role="tab" aria-selected="true" data-cam-btn="atelier">Atelier</button>
+            <button type="button" role="tab" aria-selected="false" data-cam-btn="aula" tabindex="-1">Aulas</button>
+            <button type="button" role="tab" aria-selected="false" data-cam-btn="jardin" tabindex="-1">Jardín</button>
+            <button type="button" role="tab" aria-selected="false" data-cam-btn="huerto" tabindex="-1">Huerto</button>
+          </div>
+          <figcaption>Fotos reales del plantel, como las verías en la App KoG: 22 cámaras en tiempo real desde tu celular.</figcaption>
+        </figure>
+        <ul class="proof" aria-label="Lo esencial de Kids on Going">
+          <li><i style="background:var(--pastel-lilac)"></i>Kínder incorporado a la SEP</li>
+          <li><i style="background:var(--pastel-apricot)"></i>De 7:00 am a 7:00 pm</li>
+          <li><i style="background:var(--pastel-pistachio)"></i>Inglés diario</li>
+          <li><i style="background:var(--sky)"></i>Convenios con +50 empresas</li>
+        </ul>
+      </div>
+
+      <!-- Conversación de admisiones: card sticky en desktop · hoja inferior en móvil.
+           Guion del protocolo de primer contacto (presentación ejecutiva, diap. 3): edad → horario → nombre y WhatsApp → brochure. -->
+      <aside class="chat" id="lead" aria-labelledby="chat-title">
+        <span class="chat__grab" aria-hidden="true"></span>
+        <div class="chat__head">
+          <img src="assets/brand/logo.png" alt="" width="44" height="44">
+          <div class="chat__who"><b id="chat-title">Admisiones Kids on Going</b><span>Agenda tu visita en 1 minuto</span></div>
+          <button class="chat__close" type="button" data-close-lead aria-label="Cerrar"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+        </div>
+        <div class="chat__log" id="chat-log" aria-live="polite">
+          <p class="msg msg--kog" data-q="1">¡Hola! Qué gusto saludarte. Para enviarte la información exacta, ¿qué edad tiene tu peque?</p>
+          <p class="msg msg--me" data-a="1" hidden></p>
+          <p class="msg msg--kog" data-q="2" hidden>¡Qué hermosa etapa! ¿Cuándo te acomoda más conocer el plantel? El recorrido dura 45 minutos, entre semana.</p>
+          <p class="msg msg--me" data-a="2" hidden></p>
+          <p class="msg msg--kog" data-q="3" hidden>Perfecto. ¿Cómo te llamas y a qué WhatsApp te escribimos para confirmar tu visita?</p>
+          <p class="msg msg--me" data-a="3" hidden></p>
+          <div class="msg msg--kog msg--gift" data-q="4" hidden>
+            <div class="gift"><span class="gift__doc" aria-hidden="true"></span><div><b>Brochure de costos · <span data-gift-stage>tu etapa</span></b><small>Colegiatura, horarios y lo que incluye</small></div></div>
+            <p>Un regalo antes de pasar a WhatsApp, <span data-gift-name></span>: te mandamos el brochure de la etapa de tu peque por WhatsApp y también a tu correo. ¿A cuál te lo enviamos?</p>
+          </div>
+          <p class="msg msg--me" data-a="4" hidden></p>
+          <p class="msg msg--kog" data-q="5" hidden>¡Listo! Te llevamos a WhatsApp con tu mensaje ya escrito: solo toca enviar y te confirmamos el horario de tu visita.</p>
+          <span class="typing" hidden aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="chat__ctl">
+          <div data-ctl="1" class="quick" role="group" aria-label="Edad de tu peque">
+            <button class="qbtn" type="button" data-stage-pick="bebes">Bebé<small>45 días a 1 año</small></button>
+            <button class="qbtn" type="button" data-stage-pick="toddlers">1 a 2 años<small>Toddlers</small></button>
+            <button class="qbtn" type="button" data-stage-pick="discovery">2 a 3 años<small>Discovery Preschool</small></button>
+            <button class="qbtn" type="button" data-stage-pick="kinder">3 a 6 años<small>Kínder 1, 2 y 3</small></button>
+          </div>
+          <div data-ctl="2" class="quick quick--2" role="group" aria-label="Horario para tu visita" hidden>
+            <button class="qbtn" type="button" data-when-pick="manana">Entre semana, en la mañana</button>
+            <button class="qbtn" type="button" data-when-pick="tarde">Entre semana, en la tarde</button>
+          </div>
+          <form data-ctl="3" class="compose" id="f-contact" data-form-id="kog_chat_contacto" novalidate hidden>
+            <div class="compose__row"><label class="sr-only" for="f-nombre">Tu nombre</label><input id="f-nombre" name="nombre" type="text" autocomplete="given-name" maxlength="60" placeholder="Tu nombre" required aria-describedby="err-nombre"></div>
+            <span class="err" id="err-nombre"></span>
+            <div class="compose__row compose__tel"><label class="sr-only" for="f-tel">Tu WhatsApp, 10 dígitos</label><span aria-hidden="true">+52</span><input id="f-tel" name="telefono" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="14" placeholder="Tu WhatsApp (10 dígitos)" required aria-describedby="err-tel"></div>
+            <span class="err" id="err-tel"></span>
+            <input type="hidden" name="event_id">
+            <button class="btn btn--cta btn--block" type="submit" data-cta="chat_contacto"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg>Enviar</button>
+          </form>
+          <form data-ctl="4" class="compose" id="f-gift" data-form-id="kog_chat_brochure" novalidate hidden>
+            <div class="compose__row"><label class="sr-only" for="f-email">Tu correo para recibir el brochure</label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required aria-describedby="err-email"></div>
+            <span class="err" id="err-email"></span>
+            <input type="hidden" name="event_id">
+            <button class="btn btn--cta btn--block" type="submit" data-cta="chat_brochure"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Enviármelo y abrir WhatsApp</button>
+            <button class="chat__skip" type="button" data-skip-gift>Ahora no, solo abrir WhatsApp</button>
+          </form>
+          <div data-ctl="5" hidden>
+            <a class="btn btn--cta btn--block" data-wa-final href="https://wa.me/5215561167213" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Abrir WhatsApp</a>
+          </div>
+          <p class="chat__legal">Al continuar aceptas el <a href="https://kidsongoing.com.mx/politica-de-privacidad/" target="_blank" rel="noopener">Aviso de Privacidad</a>. Usamos tus datos solo para informarte de admisiones por WhatsApp, teléfono o correo.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="stats" aria-labelledby="h-stats">
+    <div class="container">
+      <h2 id="h-stats" class="sr-only">Kids on Going en números</h2>
+      <ul class="stats__list">
+        <li><b data-count="22">22</b><span>cámaras en tiempo real</span></li>
+        <li><b data-count="12">12</b><span>horas continuas, de 7:00 am a 7:00 pm</span></li>
+        <li><b data-count="4">4</b><span>horarios de salida</span></li>
+        <li><b data-count="700" data-suffix=" m²">700 m²</b><span>de jardín para jugar al aire libre</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="blocks" id="blocks">
+
+    <section class="block is-mint" id="b-cerca" data-block="cerca" aria-labelledby="h-cerca">
+      <div class="container split">
+        <div>
+          <h2 id="h-cerca" data-rise>Cerca de tu casa y de tu oficina</h2>
+          <p class="lead" data-rise style="--d:70ms">Diseñamos Kids on Going para familias que viven o trabajan en Santa Fe, Bosques y Cuajimalpa.</p>
+          <div class="addr" data-rise style="--d:140ms"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><p><b>Calle Fresnos 87, Granjas Palo Alto</b><br>Cuajimalpa de Morelos, C.P. 05118, CDMX</p></div>
+          <ul class="zones" aria-label="Zonas cercanas" data-rise style="--d:200ms">
+            <li data-zone="cuajimalpa">Granjas y Campestre Palo Alto</li>
+            <li data-zone="bosques">Bosques de las Lomas</li>
+            <li data-zone="vistahermosa">Lomas de Vista Hermosa</li>
+            <li>Lomas del Chamizal</li>
+            <li data-zone="contadero">El Contadero</li>
+            <li data-zone="santafe">Lomas de Santa Fe</li>
+            <li data-zone="interlomas">Interlomas</li>
+          </ul>
+          <div class="block__cta">
+            <button class="btn btn--cta" type="button" data-open-lead data-cta="cerca"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agendar visita</button>
+            <a class="btn btn--soft" href="https://www.google.com/maps/search/?api=1&amp;query=Kids+on+Going+Calle+Fresnos+87+Granjas+Palo+Alto+Cuajimalpa" target="_blank" rel="noopener" data-cta="como_llegar">Cómo llegar</a>
+          </div>
+        </div>
+        <figure class="map" data-rise style="--d:120ms">
+          <svg viewBox="0 0 520 400" role="img" aria-label="Mapa ilustrativo: Kids on Going en Granjas Palo Alto, rodeado de Santa Fe, Bosques de las Lomas, Lomas de Vista Hermosa, El Contadero e Interlomas">
+            <rect width="520" height="400" fill="#E7F1F9"/>
+            <path d="M40 400 C80 330 60 300 120 260 S200 210 180 150" fill="none" stroke="#D7EBD0" stroke-width="44" stroke-linecap="round"/>
+            <path d="M0 250 C120 210 200 290 300 240 S460 170 520 200" fill="none" stroke="#fff" stroke-width="22"/>
+            <path d="M210 0 C230 120 190 200 250 270 S300 360 290 400" fill="none" stroke="#fff" stroke-width="16"/>
+            <path d="M0 120 C140 140 260 90 520 110" fill="none" stroke="#fff" stroke-width="10"/>
+            <path d="M380 0 C360 120 420 260 380 400" fill="none" stroke="#fff" stroke-width="8"/>
+            <g font-family="Poppins, system-ui, sans-serif" font-size="13" font-weight="500" fill="#3B435D">
+              <g><circle cx="390" cy="78" r="6" fill="#F1CB86"/><text x="401" y="83">Santa Fe</text></g>
+              <g><circle cx="300" cy="150" r="6" fill="#C99BCC"/><text x="311" y="155">Lomas de Vista Hermosa</text></g>
+              <g><circle cx="120" cy="80" r="6" fill="#BFDD9D"/><text x="131" y="85">Bosques de las Lomas</text></g>
+              <g><circle cx="70" cy="200" r="6" fill="#F1CB86"/><text x="81" y="205">Interlomas</text></g>
+              <g><circle cx="330" cy="330" r="6" fill="#C99BCC"/><text x="341" y="335">El Contadero</text></g>
+              <g><circle cx="110" cy="335" r="6" fill="#BFDD9D"/><text x="121" y="340">Cuajimalpa</text></g>
+            </g>
+            <circle cx="235" cy="245" r="50" fill="#5B805E" opacity=".12"/>
+            <circle cx="235" cy="245" r="28" fill="#5B805E" opacity=".18"/>
+            <path d="M235 262s-17-15-17-28a17 17 0 0 1 34 0c0 13-17 28-17 28Z" fill="#446047"/>
+            <circle cx="235" cy="234" r="6" fill="#fff"/>
+            <rect x="163" y="272" width="144" height="32" rx="16" fill="#446047"/>
+            <text x="235" y="293" text-anchor="middle" font-family="Preahvihear, Poppins, sans-serif" font-size="14" fill="#fff">Kids on Going</text>
+          </svg>
+          <figcaption>Mapa ilustrativo, no a escala.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" id="b-camaras" data-block="camaras" aria-labelledby="h-camaras">
+      <div class="container split split--rev">
+        <div>
+          <h2 id="h-camaras" data-rise>Lo ves en vivo desde tu celular</h2>
+          <p class="lead" data-rise style="--d:70ms">22 cámaras en tiempo real y bitácora minuto a minuto en la App KoG. Paz mental sin pedirte confianza a ciegas.</p>
+          <ul class="ticks" data-rise style="--d:140ms">
+            <li><span><b>Biberón, pañal, siesta y comidas</b>, registrados durante el día.</span></li>
+            <li><span><b>Acceso desde tu celular</b> a las cámaras en tiempo real.</span></li>
+            <li><span><b>En tu visita te lo mostramos funcionando.</b></span></li>
+          </ul>
+          <div class="block__cta"><button class="btn btn--cta" type="button" data-open-lead data-cta="camaras"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Ver las cámaras en mi visita</button></div>
+        </div>
+        <figure data-rise style="margin:0;--d:100ms">
+          <div class="phone" data-ui aria-hidden="true">
+            <div class="phone__screen">
+              <div class="phone__bar"><span>App KoG</span><span>● En vivo</span></div>
+              <div class="appcams">
+                <div class="appcam"><img src="assets/img/atelier-560.webp" alt="" width="560" height="420" loading="lazy" decoding="async"><span>Atelier</span></div>
+                <div class="appcam"><img src="assets/img/aula-560.webp" alt="" width="560" height="420" loading="lazy" decoding="async"><span>Aula</span></div>
+                <div class="appcam"><img src="assets/img/jardin-560.webp" alt="" width="560" height="700" loading="lazy" decoding="async"><span>Jardín</span></div>
+                <div class="appcam"><img src="assets/img/huerto-560.webp" alt="" width="560" height="700" loading="lazy" decoding="async"><span>Huerto</span></div>
+              </div>
+              <ul class="log">
+                <li><time>09:40</time>Biberón<svg><use href="#i-check"/></svg></li>
+                <li><time>11:30</time>Alimento completo<svg><use href="#i-check"/></svg></li>
+                <li><time>13:15</time>Siesta iniciada<svg><use href="#i-check"/></svg></li>
+              </ul>
+            </div>
+          </div>
+          <figcaption class="phone__cap">Ilustración de la App KoG con fotos reales del plantel. Horarios de ejemplo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" id="b-horario" data-block="horario" aria-labelledby="h-horario">
+      <div class="container">
+        <h2 id="h-horario" data-rise>Tu agenda manda, no el horario escolar</h2>
+        <p class="lead" data-rise style="--d:70ms">Abrimos de 7:00 am a 7:00 pm con 4 horarios de salida. Si tu horario cambia, cambias de plan sin cambiar de escuela.</p>
+        <div class="tl" role="img" aria-label="Horario de 7:00 am a 7:00 pm con salidas a la 1:00, 4:00, 5:30 y 7:00 pm, y enfermera en planta de 11:00 am a 7:00 pm" data-rise style="--d:140ms">
+          <div class="tl__track">
+            <span class="tl__nurse"></span>
+            <span class="tl__stop" style="left:50%"></span>
+            <span class="tl__stop" style="left:75%"></span>
+            <span class="tl__stop" style="left:87.5%"></span>
+            <span class="tl__stop" style="left:100%"></span>
+          </div>
+          <span class="tl__lbl" style="left:50%">1:00<small>salida</small></span>
+          <span class="tl__lbl" style="left:75%">4:00<small>salida</small></span>
+          <span class="tl__lbl" style="left:87.5%;transform:translateX(-70%)">5:30</span>
+          <span class="tl__lbl" style="left:100%;transform:translateX(-100%);text-align:right">7:00<small>pm</small></span>
+          <div class="tl__ends"><span>7:00 am</span><span>7:00 pm</span></div>
+        </div>
+        <ul class="tl__exits" aria-hidden="true"><li>1:00 pm</li><li>4:00 pm</li><li>5:30 pm</li><li>7:00 pm</li></ul>
+        <div class="tl__legend"><span><i style="background:var(--pastel-apricot);border:3px solid var(--forest)"></i>Horarios de salida</span><span><i style="background:var(--pastel-pistachio)"></i>Enfermera en planta</span></div>
+        <div class="facts" data-rise style="--d:200ms">
+          <div class="fact"><b>Enfermera en planta</b><span>De 11:00 am a 7:00 pm</span></div>
+          <div class="fact"><b>Comedor</b><span>Menú balanceado</span></div>
+          <div class="fact"><b>Talleres vespertinos</b><span>Para que siga estimulado por la tarde</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="b-bilingue" data-block="bilingue" aria-labelledby="h-bilingue">
+      <div class="container">
+        <h2 id="h-bilingue" data-rise>Inglés todos los días, desde la Sala de Bebés</h2>
+        <p class="lead" data-rise style="--d:70ms">Tu peque crece escuchando dos idiomas, con especialistas en cada etapa.</p>
+        <div class="bubbles">
+          <div data-rise style="--d:120ms"><span class="bubble__ic" style="background:var(--pastel-apricot)"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><h3>Inglés diario desde bebés</h3><p>Parte del día en todas las etapas, desde los 45 días.</p></div>
+          <div data-rise style="--d:190ms"><span class="bubble__ic" style="background:var(--pastel-pistachio)"><svg aria-hidden="true"><use href="#i-star"/></svg></span><h3>Kids&amp;Us desde Kínder 1</h3><p>Un segundo programa de inglés con especialistas, sumado al inglés diario.</p></div>
+          <div data-rise style="--d:260ms"><span class="bubble__ic" style="background:var(--pastel-lilac)"><svg aria-hidden="true"><use href="#i-bot"/></svg></span><h3>Música, Arte y Bee-Bot</h3><p>Música con un licenciado del Conservatorio Nacional, Arte y robótica Bee-Bot.</p></div>
+        </div>
+        <div class="block__cta"><button class="btn btn--cta" type="button" data-open-lead data-cta="bilingue"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agendar visita</button></div>
+      </div>
+    </section>
+
+    <section class="block" id="b-kinder" data-block="kinder" aria-labelledby="h-kinder">
+      <div class="container split">
+        <div>
+          <h2 id="h-kinder" data-rise>Reggio Emilia con estructura</h2>
+          <p class="lead" data-rise style="--d:70ms">Aprenden desde su curiosidad, con objetivos claros por etapa. Juegan con estructura, no solo juegan.</p>
+          <div class="sep" data-rise style="--d:140ms"><span class="sep__ic"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg></span><div><b>Incorporado a la SEP</b><span>CCT 09PJN0093I · Kínder 1, 2 y 3</span></div></div>
+          <ul class="ticks" data-rise style="--d:200ms">
+            <li><span><b>Grupos de alrededor de 12 niños</b> y un equipo estable acompañado por la Directora.</span></li>
+            <li><span><b>Robótica con Bee-Bot</b>, Atelier, Huerto y Sala Multisensorial.</span></li>
+            <li><span><b>Kids&amp;Us desde Kínder 1</b>, además del inglés diario.</span></li>
+            <li><span><b>Taller de Desarrollo Emocional</b> con la Directora: autoestima y manejo de la frustración.</span></li>
+            <li><span><b>Preparación integral</b> para la transición a primarias bilingües.</span></li>
+          </ul>
+        </div>
+        <div class="photo" data-rise style="--d:120ms;aspect-ratio:4/5"><img src="assets/img/huerto-560.webp" alt="Niño con sombrero cuidando lechugas en el huerto de Kids on Going" width="560" height="700" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+
+    <section class="block" id="b-etapas" data-block="etapas" aria-labelledby="h-etapas">
+      <div class="container">
+        <h2 id="h-etapas" data-rise>Una sala para cada etapa</h2>
+        <p class="lead" data-rise style="--d:70ms">Desde los 45 días hasta los 6 años. La guardería recibe todo el año según cupo; el kínder, para el ciclo en curso o el siguiente.</p>
+        <ul class="stages">
+          <li class="stage" data-rise style="--d:100ms"><span class="stage__age" style="background:var(--pastel-lilac)">45 días<br>a 1 año</span><div><h3>Sala de Bebés</h3><p>Inglés diario y bitácora de biberón, pañal y siestas en la App KoG.</p><button type="button" data-open-lead data-stage="bebes" data-cta="etapa_bebes">Agendar visita</button></div></li>
+          <li class="stage" data-rise style="--d:160ms"><span class="stage__age" style="background:var(--pastel-pistachio)">1 a 2 años</span><div><h3>Toddlers</h3><p>Estimulación temprana, sala multisensorial, jardín y huerto.</p><button type="button" data-open-lead data-stage="toddlers" data-cta="etapa_toddlers">Agendar visita</button></div></li>
+          <li class="stage" data-rise style="--d:220ms"><span class="stage__age" style="background:var(--pastel-apricot)">2 a 3 años</span><div><h3>Discovery Preschool</h3><p>Transición Reggio Emilia, inglés diario y talleres desde los 2 años.</p><button type="button" data-open-lead data-stage="discovery" data-cta="etapa_discovery">Agendar visita</button></div></li>
+          <li class="stage" data-rise style="--d:280ms"><span class="stage__age" style="background:#A9D3EF">3 a 6 años</span><div><h3>Kínder 1, 2 y 3</h3><p>Incorporado a la SEP, Kids&amp;Us desde K1 y robótica Bee-Bot.</p><button type="button" data-open-lead data-stage="kinder" data-cta="etapa_kinder">Agendar visita</button></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="b-instalaciones" data-block="instalaciones" aria-labelledby="h-instalaciones">
+      <div class="container">
+        <h2 id="h-instalaciones" data-rise>Míralo con tus propios ojos</h2>
+        <p class="lead" data-rise style="--d:70ms">Atelier, aulas, jardín de 700 m² y huerto. En el recorrido de 45 minutos conoces cada espacio.</p>
+        <div class="gallery">
+          <figure data-rise style="--d:100ms"><img src="assets/img/atelier-560.webp" alt="Atelier con mesas, caballetes y materiales de arte" width="560" height="420" loading="lazy" decoding="async"><figcaption>Atelier</figcaption></figure>
+          <figure data-rise style="--d:160ms"><img src="assets/img/aula-560.webp" alt="Aula con mesa central, piso de madera y trabajos de los niños" width="560" height="420" loading="lazy" decoding="async"><figcaption>Aulas</figcaption></figure>
+          <figure data-rise style="--d:220ms"><img src="assets/img/jardin-560.webp" alt="Rueda de la fortuna decorativa en el jardín de Kids on Going" width="560" height="700" loading="lazy" decoding="async"><figcaption>Jardín de 700 m²</figcaption></figure>
+          <figure data-rise style="--d:280ms"><img src="assets/img/huerto-560.webp" alt="Niño con sombrero cuidando lechugas en el huerto" width="560" height="700" loading="lazy" decoding="async"><figcaption>Huerto</figcaption></figure>
+        </div>
+        <div class="block__cta" style="justify-content:center"><button class="btn btn--cta" type="button" data-open-lead data-cta="instalaciones"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agenda una visita al plantel</button></div>
+      </div>
+    </section>
+
+    <section class="block" id="b-faq" data-block="faq" aria-labelledby="h-faq">
+      <div class="container faqwrap">
+        <div>
+          <h2 id="h-faq" data-rise>Lo que más nos preguntan</h2>
+          <p class="lead" data-rise style="--d:70ms">¿Te quedó otra duda? Te la respondemos por WhatsApp.</p>
+        </div>
+        <div>
+          <div class="faq is-collapsed" id="faq-list">
+            
+            <details name="kog-faq" data-faq="1"><summary>¿Cuánto cuesta la colegiatura?<i aria-hidden="true"></i></summary><p>Depende de la etapa y del horario de salida. Te enviamos el brochure de costos por WhatsApp en minutos. Si tu empresa tiene convenio con nosotros (+50 empresas, TDU o CAMEXA), aplicas a precio preferencial de hasta 15%.</p></details>
+            
+            <details name="kog-faq" data-faq="2"><summary>¿Puedo ver a mi bebé durante el día?<i aria-hidden="true"></i></summary><p>Sí. Tienes acceso desde tu celular a 22 cámaras en tiempo real y a la App KoG, donde registramos biberones, pañales, siestas, comidas y actividades. En tu visita te lo mostramos funcionando.</p></details>
+            
+            <details name="kog-faq" data-faq="3"><summary>Si es Reggio Emilia, ¿solo juegan?<i aria-hidden="true"></i></summary><p>Juegan con estructura: el kínder está incorporado a la SEP (CCT 09PJN0093I), trabajamos robótica con Bee-Bot, inglés diario y Kids&amp;Us desde Kínder 1. Aprenden desde su curiosidad, con objetivos claros por etapa.</p></details>
+            
+            <details name="kog-faq" data-faq="4"><summary>¿Qué pasa si mi horario cambia?<i aria-hidden="true"></i></summary><p>Abrimos de 7:00 am a 7:00 pm con 4 salidas: 1:00, 4:00, 5:30 y 7:00 pm. Por la tarde hay talleres vespertinos para que tu peque siga estimulado.</p></details>
+            
+            <details name="kog-faq" data-faq="5"><summary>¿Cuántos niños hay por grupo y cambian mucho las misses?<i aria-hidden="true"></i></summary><p>Trabajamos con grupos pequeños, de alrededor de 12 niños, y un equipo estable acompañado de cerca por la Directora.</p></details>
+            
+            <details name="kog-faq" data-faq="6"><summary>¿No conviene un colegio grande desde kínder?<i aria-hidden="true"></i></summary><p>Los primeros 6 años piden un entorno especializado en primera infancia, donde tu peque sea el centro. Te ayudamos a preparar la transición a la primaria que elijas.</p></details>
+            
+            <details name="kog-faq" data-faq="7"><summary>¿Y si se enferma? ¿Qué come?<i aria-hidden="true"></i></summary><p>Contamos con enfermera en planta de 11:00 a 7:00 pm, comedor con menú balanceado y un jardín de 700 m² para jugar al aire libre todos los días.</p></details>
+            
+            <details name="kog-faq" data-faq="8"><summary>¿Desde qué edad reciben y cuándo puede entrar?<i aria-hidden="true"></i></summary><p>Desde los 45 días de nacido hasta Kínder 3 (6 años). La guardería recibe todo el año según cupo; el kínder, para el ciclo en curso o el siguiente.</p></details>
+            
+          </div>
+          <button class="btn btn--soft faq__more" type="button" id="faq-more" aria-controls="faq-list" aria-expanded="false">Ver más preguntas</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <a class="close" href="#lead" data-open-lead data-cta="cierre">
+    <span class="container" style="display:block">
+      <h2 id="h-close">Elegir <span data-v-close>guardería o kínder</span> se siente en el corazón</h2>
+      <p>No solo se lee en un chat. Ven a un recorrido de 45 minutos sin compromiso: te mostramos las cámaras funcionando, las aulas y el jardín. Inscripciones abiertas para el ciclo 2027-2028; la guardería recibe todo el año.</p>
+      <span class="close__btn"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agendar mi visita por WhatsApp</span>
+    </span>
+  </a>
+  <script>
+  /* Orden de bloques por variante, antes de pintar. Los bloques que la variante no usa se ocultan (página breve). */
+  (function () {
+    var K = window.KOG; if (!K) return;
+    var wrap = document.getElementById('blocks');
+    var order = K.cfg.blocks || [];
+    var all = wrap.querySelectorAll('[data-block]');
+    for (var i = 0; i < all.length; i++) all[i].hidden = order.indexOf(all[i].getAttribute('data-block')) < 0;
+    order.forEach(function (id, n) {
+      var el = document.getElementById('b-' + id); if (!el) return;
+      wrap.appendChild(el);
+      el.classList.remove('is-mint', 'is-lav');
+      if (n % 2 === 0) el.classList.add(n % 4 === 0 ? 'is-mint' : 'is-lav');
+    });
+    var list = document.getElementById('faq-list');
+    (K.cfg.faq || []).forEach(function (n, idx) {
+      var d = list.querySelector('[data-faq="' + n + '"]');
+      if (d) { list.appendChild(d); d.classList.toggle('is-extra', idx >= 5); }
+    });
+    var c = document.querySelector('[data-v-close]'); if (c) c.textContent = K.cfg.tipo;
+    if (K.loc) { var z = document.querySelector('.zones [data-zone="' + K.loc + '"]'); if (z) z.classList.add('is-hit'); }
+  })();
+  </script>
+</main>
+
+<footer class="foot">
+  <div class="container foot__grid">
+    <div>
+    <img class="foot__logo" src="assets/brand/logo.png" alt="Kids on Going" width="110" height="77" loading="lazy">
+    <p><b>Kids on Going</b> · Calle Fresnos 87, Col. Granjas Palo Alto, Cuajimalpa de Morelos, C.P. 05118, CDMX · Preescolar incorporado a la SEP, CCT 09PJN0093I</p>
+    <p>Tel. <a href="tel:+525561167213" data-phone="footer">55 6116 7213</a> · <a href="mailto:informes@kidsongoing.com.mx">informes@kidsongoing.com.mx</a> · <a href="https://kidsongoing.com.mx/" data-cta="sitio">kidsongoing.com.mx</a> · <a href="https://kidsongoing.com.mx/politica-de-privacidad/" target="_blank" rel="noopener">Aviso de Privacidad</a></p>
+    <p>Precio preferencial sujeto a validación del convenio de tu empresa. Cupo sujeto a disponibilidad por grupo.</p>
+    <p>Este sitio no forma parte de Meta Platforms, Inc. ni de Google LLC.</p>
+    <noscript><p>¿Sin JavaScript? Escríbenos directo: <a href="https://wa.me/5215561167213">WhatsApp 55 6116 7213</a></p></noscript>
+    </div>
+    <div class="foot__act">
+      <p class="foot__big">¿Agendamos tu visita?</p>
+      <p>Recorrido de 45 minutos, entre semana, sin compromiso.</p>
+      <button class="btn btn--cta foot__btn" type="button" data-open-lead data-cta="footer"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agendar visita</button>
+      <p><a href="tel:+525561167213" data-phone="footer_big">o llama al 55 6116 7213</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <a class="btn btn--soft dock__tel" href="tel:+525561167213" data-phone="dock" aria-label="Llamar al 55 6116 7213"><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg></a>
+  <button class="btn btn--cta" type="button" data-open-lead data-cta="dock"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agendar por WhatsApp</button>
+</div>
+<div class="scrim" id="scrim" data-close-lead></div>
+</div>
+
+<script>window.WEBDEV_CONFIG = {"params": ["kw", "h", "loc", "aud", "v", "kw", "gclid"], "dtr": {"loc": {"allow": ["bosques"]}, "aud": {"allow": ["guarderia"]}, "v": {"allow": ["kinder-bilingue"]}}, "maxLen": 60, "debug": false, "h1Map": {"1": "La guardería y kínder en Palo Alto donde ves a tu peque en vivo mientras aprende en dos idiomas", "2": "De 7:00 a 7:00, a minutos de Santa Fe: guardería y kínder SEP con 22 cámaras en vivo", "3": "Kínder Reggio Emilia con estructura: SEP, Bee-Bot y doble inglés en Palo Alto"}, "pageType": "admisiones"};</script>
+<script>
+/*! dtr_and_tracking.js v1.0.0 — 02_Web_Dev | DTR + atribución + dataLayer | sin dependencias */
+/*
+ * Configuración opcional (antes de cargar este script):
+ *   window.WEBDEV_CONFIG = {
+ *     params: ['utm_source', ...],          // parámetros a capturar (se suman a los por defecto)
+ *     dtr: { aud: { allow: ['b2b','ecommerce'] } },   // reglas por parámetro (opcional)
+ *     h1Map: { '1': 'H1 A', '2': 'H1 B' },  // lista blanca para data-dtr="h"
+ *     maxLen: 60,                           // largo máximo de texto DTR
+ *     attributionDays: 90,                  // vida del first-touch en localStorage
+ *     decorateHosts: ['wa.me', ...],        // hosts cuyos links reciben las UTMs
+ *     whatsappRefInText: false,             // agrega "[ref: fuente/campaña]" al mensaje de WhatsApp
+ *     pageType: 'landing',                  // page_type en lp_view
+ *     debug: false                          // loguea cada push en consola
+ *   };
+ *
+ * Marcado HTML soportado:
+ *   <h1 data-dtr="kw" data-dtr-template="{value} para crecer tu facturación">Fallback seguro</h1>
+ *   <h1 data-dtr="h" data-dtr-map='{"2":"Otro H1"}'>Fallback</h1>         (lista blanca por mapa)
+ *   <p data-dtr="city" data-dtr-allow="cordoba,rosario" data-dtr-case="title">Argentina</p>
+ *   <a href="https://wa.me/549..." data-cta="hero">…</a>                  (cta_click + whatsapp_click)
+ *   <form data-form-id="lead_v1">…<input type="hidden" name="utm_source">…</form>
+ *   <iframe data-src="https://api.leadconnectorhq.com/widget/form/ID" data-append-utm></iframe>
+ *
+ * API pública: window.WebDevTracking.{push, getAttribution, decorateUrl, refresh}
+ */
+(function (w, d) {
+  'use strict';
+  if (w.WebDevTracking && w.WebDevTracking.version) return; // evita doble carga (GHL + página)
+
+  var VERSION = '1.0.0';
+  var CFG = w.WEBDEV_CONFIG || {};
+  var DEFAULT_PARAMS = [
+    'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
+    'kw', 'city', 'headline',
+    'gclid', 'fbclid', 'gbraid', 'wbraid', 'msclkid', 'ttclid'
+  ];
+  var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  var CLICK_IDS = ['gclid', 'fbclid', 'gbraid', 'wbraid', 'msclkid', 'ttclid'];
+  var PARAMS = uniq(DEFAULT_PARAMS.concat(CFG.params || []));
+  var MAX_LEN = CFG.maxLen || 60;
+  var DAYS = CFG.attributionDays || 90;
+  var SS_KEY = 'webdev_session_params';
+  var LS_KEY = 'webdev_first_touch';
+  var DECORATE_HOSTS = uniq([
+    'wa.me', 'api.whatsapp.com', 'web.whatsapp.com', 'whatsapp.com',
+    'leadconnectorhq.com', 'msgsndr.com', 'gohighlevel.com', 'highlevel.com',
+    'calendly.com', 'cal.com', 'tidycal.com', 'zcal.co'
+  ].concat(CFG.decorateHosts || []));
+
+  // ------------------------------------------------------------------ utils
+  function uniq(a) { var o = [], s = {}; for (var i = 0; i < a.length; i++) { if (!s[a[i]]) { s[a[i]] = 1; o.push(a[i]); } } return o; }
+  function log() { if (CFG.debug && w.console) w.console.log.apply(w.console, ['[WebDev]'].concat([].slice.call(arguments))); }
+  function safeGet(store, k) { try { return store.getItem(k); } catch (e) { return null; } }
+  function safeSet(store, k, v) { try { store.setItem(k, v); } catch (e) { /* modo privado / bloqueado */ } }
+  function parseJSON(s) { try { return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+  function uuid() {
+    if (w.crypto && w.crypto.randomUUID) return w.crypto.randomUUID();
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = Math.random() * 16 | 0; return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+    });
+  }
+  function getCookie(name) {
+    var m = d.cookie.match(new RegExp('(?:^|; )' + name.replace(/[.$?*|{}()[\]\\/+^]/g, '\\$&') + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+  /** Sanitiza texto de URL para DTR: sin etiquetas, sin control, largo máximo. Se aplica SIEMPRE con textContent. */
+  function sanitize(v, max, display) {
+    if (v == null) return '';
+    v = String(v);
+    try { v = decodeURIComponent(v); } catch (e) { /* ya decodificado */ }
+    if (display) {
+      // Solo texto visible: kw=auditoria_google -> "auditoria google"; fuera etiquetas y símbolos de código.
+      v = v.replace(/<[^>]*>?/g, ' ').replace(/[+_]/g, ' ').replace(/[^\p{L}\p{N}\s.,¿?¡!%&-]/gu, '');
+    }
+    v = v.replace(/<[^>]*>?/g, '')            // etiquetas completas o truncadas
+         .replace(/[<>"'`{}\\]/g, '')         // caracteres de inyección
+         .replace(/[\u0000-\u001F\u007F]/g, '') // control
+         .replace(/\s+/g, ' ').trim();
+    if (/^(javascript|data|vbscript):/i.test(v)) return '';
+    return v.slice(0, max || MAX_LEN).trim();
+  }
+  function caseTransform(v, mode) {
+    if (mode === 'title') return v.replace(/\S+/g, function (t) { return t.charAt(0).toUpperCase() + t.slice(1).toLowerCase(); });
+    if (mode === 'upper') return v.toUpperCase();
+    if (mode === 'lower') return v.toLowerCase();
+    if (mode === 'sentence') return v.charAt(0).toUpperCase() + v.slice(1);
+    return v;
+  }
+  function norm(v) { return String(v || '').toLowerCase().normalize ? String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '') : String(v || '').toLowerCase(); }
+
+  // ------------------------------------------------------------ atribución
+  var url = new URL(w.location.href);
+  var current = {};
+  PARAMS.forEach(function (k) {
+    var v = url.searchParams.get(k);
+    if (v != null && v !== '') current[k] = sanitize(v, k.indexOf('utm_') === 0 || CLICK_IDS.indexOf(k) > -1 ? 200 : MAX_LEN);
+  });
+
+  // Sesión: los parámetros nuevos pisan a los anteriores (last-touch dentro de la sesión).
+  var session = parseJSON(safeGet(w.sessionStorage, SS_KEY)) || {};
+  for (var k in current) session[k] = current[k];
+  if (!session.landing_page) session.landing_page = url.origin + url.pathname;
+  if (!session.referrer && d.referrer && d.referrer.indexOf(url.origin) !== 0) session.referrer = d.referrer.slice(0, 300);
+  safeSet(w.sessionStorage, SS_KEY, JSON.stringify(session));
+
+  // First-touch persistente (90 días por defecto); solo se crea si hay datos de campaña.
+  var first = parseJSON(safeGet(w.localStorage, LS_KEY));
+  if (first && first.expires && Date.now() > first.expires) first = null;
+  var hasCampaign = UTM_KEYS.concat(CLICK_IDS).some(function (x) { return current[x]; });
+  if (!first && hasCampaign) {
+    first = { data: current, landing_page: session.landing_page, referrer: session.referrer || '', ts: Date.now(), expires: Date.now() + DAYS * 864e5 };
+    safeSet(w.localStorage, LS_KEY, JSON.stringify(first));
+  }
+
+  // fbc (formato Meta) si llegó fbclid y no hay cookie _fbc.
+  if (current.fbclid && !getCookie('_fbc')) session.fbc = 'fb.1.' + Date.now() + '.' + current.fbclid;
+
+  function getAttribution() {
+    var out = {};
+    var ft = (first && first.data) || {};
+    PARAMS.forEach(function (p) { if (session[p] || ft[p]) out[p] = session[p] || ft[p]; });
+    out.landing_page = session.landing_page;
+    out.referrer = session.referrer || '';
+    out.fbc = getCookie('_fbc') || session.fbc || '';
+    out.fbp = getCookie('_fbp') || '';
+    if (first) {
+      UTM_KEYS.forEach(function (p) { if (ft[p]) out['ft_' + p] = ft[p]; });
+      out.ft_landing_page = first.landing_page;
+    }
+    return out;
+  }
+
+  // ------------------------------------------------------------- dataLayer
+  w.dataLayer = w.dataLayer || [];
+  function push(event, params) {
+    var attr = getAttribution();
+    var payload = {
+      event: event,
+      event_id: uuid(),
+      page_type: CFG.pageType || (d.body && d.body.getAttribute('data-page-type')) || 'landing',
+      page_path: w.location.pathname,
+      utm_source: attr.utm_source || '(direct)',
+      utm_medium: attr.utm_medium || '(none)',
+      utm_campaign: attr.utm_campaign || '(not set)',
+      utm_content: attr.utm_content || '',
+      utm_term: attr.utm_term || ''
+    };
+    if (params) for (var p in params) if (params[p] !== undefined) payload[p] = params[p];
+    w.dataLayer.push(payload);
+    log(event, payload);
+    return payload.event_id;
+  }
+
+  // ---------------------------------------------------------------- DTR
+  function applyDTR(root) {
+    var nodes = (root || d).querySelectorAll('[data-dtr]');
+    for (var i = 0; i < nodes.length; i++) {
+      var el = nodes[i];
+      if (el.getAttribute('data-dtr-done')) continue;
+      el.setAttribute('data-dtr-done', '1');
+      // data-dtr="h|kw": gana el primer parámetro con un valor válido; si ninguno, queda el fallback del HTML.
+      var params = el.getAttribute('data-dtr').split('|');
+      for (var q = 0; q < params.length; q++) {
+        var res = resolveDTR(el, params[q].trim());
+        if (!res) continue;
+        el.textContent = res.text; // nunca innerHTML
+        el.setAttribute('data-dtr-applied', res.param);
+        break;
+      }
+    }
+  }
+
+  function resolveDTR(el, param) {
+    var raw = session[param] != null ? session[param] : url.searchParams.get(param);
+    if (raw == null || raw === '') return null;
+    var rule = (CFG.dtr && CFG.dtr[param]) || {};
+    var map = parseJSON(el.getAttribute('data-dtr-map')) || rule.map || (param === 'h' || param === 'headline' ? CFG.h1Map : null);
+    var allowAttr = el.getAttribute('data-dtr-allow');
+    var allow = allowAttr ? allowAttr.split(',') : rule.allow;
+    var max = +el.getAttribute('data-dtr-max') || rule.max || MAX_LEN;
+    var value, fromMap = false;
+    if (map && map[String(raw).trim()]) {
+      value = map[String(raw).trim()]; // lista blanca estricta por ID
+      fromMap = true;
+    } else if (map && (param === 'h' || !CFG.headlineFreeText)) {
+      return null;                      // ID desconocido -> fallback
+    } else {
+      value = sanitize(raw, max, true);
+      if (allow) {
+        var n = norm(value), ok = false;
+        for (var j = 0; j < allow.length; j++) if (norm(allow[j]).trim() === n) { ok = true; break; }
+        if (!ok) return null;
+        if (rule.labels) {
+          if (!rule.labels[n]) return null; // en lista blanca pero sin texto aprobado -> fallback
+          value = rule.labels[n];
+          fromMap = true;
+        }
+      }
+    }
+    if (!value) return null;
+    if (!fromMap) value = caseTransform(value, el.getAttribute('data-dtr-case') || rule.case);
+    var tpl = fromMap ? null : (el.getAttribute('data-dtr-template') || rule.template);
+    return { param: param, text: tpl ? tpl.replace('{value}', value) : value };
+  }
+
+  // -------------------------------------------- decoración de URLs salientes
+  function hostMatches(host) {
+    host = host.toLowerCase();
+    for (var i = 0; i < DECORATE_HOSTS.length; i++) {
+      var h = DECORATE_HOSTS[i];
+      if (host === h || host.slice(-(h.length + 1)) === '.' + h) return true;
+    }
+    return false;
+  }
+  function isWhatsApp(href) { return /^(https?:)?\/\/(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com|(www\.)?whatsapp\.com)\//i.test(href) || /^whatsapp:/i.test(href); }
+
+  function decorateUrl(href, force) {
+    if (!href || /^(#|mailto:|tel:|javascript:)/i.test(href)) return href;
+    var u;
+    try { u = new URL(href, w.location.href); } catch (e) { return href; }
+    if (!force && !hostMatches(u.hostname)) return href;
+    var attr = getAttribution();
+    UTM_KEYS.concat(CLICK_IDS).forEach(function (k) {
+      if (attr[k] && !u.searchParams.has(k)) u.searchParams.set(k, attr[k]);
+    });
+    if (CFG.whatsappRefInText && isWhatsApp(u.href) && (attr.utm_source || attr.utm_campaign)) {
+      var text = u.searchParams.get('text') || '';
+      var ref = '[ref: ' + [attr.utm_source, attr.utm_campaign].filter(Boolean).join('/') + ']';
+      if (text.indexOf('[ref:') === -1) u.searchParams.set('text', (text ? text + ' ' : '') + ref);
+    }
+    return u.toString();
+  }
+
+  function decorateAll(root) {
+    var scope = root || d;
+    var links = scope.querySelectorAll('a[href]');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      var force = a.hasAttribute('data-append-utm');
+      var next = decorateUrl(a.getAttribute('href'), force);
+      if (next !== a.getAttribute('href')) a.setAttribute('href', next);
+    }
+    var frames = scope.querySelectorAll('iframe[data-src], iframe[src]');
+    for (var f = 0; f < frames.length; f++) {
+      var fr = frames[f];
+      if (fr.getAttribute('data-utm-done')) continue;
+      var src = fr.getAttribute('data-src') || fr.getAttribute('src');
+      var dec = decorateUrl(src, fr.hasAttribute('data-append-utm'));
+      if (fr.hasAttribute('data-src')) { fr.setAttribute('src', dec); fr.removeAttribute('data-src'); }
+      else if (dec !== src) fr.setAttribute('src', dec);
+      fr.setAttribute('data-utm-done', '1');
+    }
+  }
+
+  // ------------------------------------------------- campos ocultos de forms
+  function fillHiddenFields(root) {
+    var attr = getAttribution();
+    var inputs = (root || d).querySelectorAll('form input[type="hidden"], form input[data-attr-field]');
+    for (var i = 0; i < inputs.length; i++) {
+      var inp = inputs[i];
+      var key = inp.getAttribute('data-attr-field') || inp.name;
+      if (key && attr[key] != null && !inp.value) inp.value = attr[key];
+    }
+  }
+
+  // ------------------------------------------------------------- eventos
+  function ctaText(el) { return (el.getAttribute('data-cta-text') || el.textContent || el.value || '').replace(/\s+/g, ' ').trim().slice(0, 100); }
+  function ctaPosition(el) {
+    var p = el.getAttribute('data-cta') || el.getAttribute('data-cta-position');
+    if (p && p !== 'true' && p !== '') return p;
+    var sec = el.closest ? el.closest('[data-section], section[id]') : null;
+    return sec ? (sec.getAttribute('data-section') || sec.id) : 'unknown';
+  }
+
+  d.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('a, button, [data-cta]') : null;
+    if (!el) return;
+    var href = el.getAttribute('href') || '';
+    // Decoración en el momento del clic (cubre links insertados después por GHL/JS).
+    if (href && el.tagName === 'A') {
+      var dec = decorateUrl(href, el.hasAttribute('data-append-utm'));
+      if (dec !== href) el.setAttribute('href', dec);
+      href = dec;
+    }
+    var position = ctaPosition(el);
+    if (isWhatsApp(href) || el.hasAttribute('data-whatsapp')) {
+      push('whatsapp_click', { cta_text: ctaText(el), cta_position: position, link_url: href.split('?')[0] });
+    }
+    if (el.hasAttribute('data-cta') || /\bbtn\b|\bcta\b/.test(el.className || '')) {
+      push('cta_click', { cta_text: ctaText(el), cta_position: position, link_url: href ? href.split('?')[0] : '' });
+    }
+  }, true);
+
+  var formsStarted = {};
+  d.addEventListener('focusin', function (e) {
+    var form = e.target && e.target.form;
+    if (!form) return;
+    var id = form.getAttribute('data-form-id') || form.id || form.name || 'form';
+    if (formsStarted[id]) return;
+    formsStarted[id] = 1;
+    push('form_start', { form_id: id });
+  });
+
+  d.addEventListener('submit', function (e) {
+    var form = e.target;
+    if (!form || form.tagName !== 'FORM') return;
+    fillHiddenFields(form.parentNode || d);
+    var id = form.getAttribute('data-form-id') || form.id || form.name || 'form';
+    var evid = push('form_submit', { form_id: id });
+    var h = form.querySelector('input[name="event_id"]');
+    if (h) h.value = evid; // mismo event_id para CAPI / CRM (deduplicación)
+  }, true);
+
+  // Formularios GHL embebidos (iframe) avisan por postMessage al enviarse.
+  w.addEventListener('message', function (e) {
+    if (!/leadconnectorhq\.com|msgsndr\.com|gohighlevel\.com/.test(e.origin || '')) return;
+    var data = e.data;
+    var str = typeof data === 'string' ? data : (data && (data.type || data.event || data.action)) || '';
+    if (/submit|form-?submitted|survey-?submitted/i.test(JSON.stringify(str))) push('form_submit', { form_id: 'ghl_embed', form_provider: 'gohighlevel' });
+    if (/appointment|booking|booked/i.test(JSON.stringify(str))) push('schedule', { form_id: 'ghl_calendar' });
+  });
+
+  // Scroll 50 / 90 (una vez por página). Throttle con setTimeout: rAF se pausa en pestañas sin pintar.
+  var fired = {}, ticking = false;
+  function onScroll() {
+    ticking = false;
+    var doc = d.documentElement;
+    var max = Math.max(doc.scrollHeight - w.innerHeight, 1);
+    var pct = Math.round((w.scrollY || doc.scrollTop) / max * 100);
+    if (pct >= 50 && !fired[50]) { fired[50] = 1; push('scroll_50', { percent: 50 }); }
+    if (pct >= 90 && !fired[90]) { fired[90] = 1; push('scroll_90', { percent: 90 }); w.removeEventListener('scroll', schedule); }
+  }
+  function schedule() { if (!ticking) { ticking = true; setTimeout(onScroll, 120); } }
+  w.addEventListener('scroll', schedule, { passive: true });
+
+  // ------------------------------------------------------------------ init
+  function init() {
+    applyDTR();
+    decorateAll();
+    fillHiddenFields();
+    push('lp_view', { landing_page: session.landing_page, referrer: session.referrer || '', dtr_applied: Object.keys(current).filter(function (k) { return ['kw', 'city', 'headline', 'h', 'aud', 'loc'].indexOf(k) > -1; }).join(',') });
+    // GHL inyecta formularios/calendarios después del load: re-decoramos lo nuevo.
+    if (w.MutationObserver) {
+      var pending = false;
+      new MutationObserver(function () {
+        if (pending) return; pending = true;
+        setTimeout(function () { pending = false; applyDTR(); decorateAll(); fillHiddenFields(); }, 200);
+      }).observe(d.body, { childList: true, subtree: true });
+    }
+  }
+
+  w.WebDevTracking = {
+    version: VERSION,
+    push: push,
+    getAttribution: getAttribution,
+    decorateUrl: function (h) { return decorateUrl(h, true); },
+    refresh: function () { applyDTR(); decorateAll(); fillHiddenFields(); },
+    sanitize: sanitize
+  };
+
+  if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', init);
+  else init();
+})(window, document);
+
+</script>
+<script>
+/* ===== Conversación de admisiones → WhatsApp (Kids on Going) =====
+   Paso 1 edad (1 toque) · 2 horario (1 toque) · 3 nombre + WhatsApp = LEAD (generate_lead + webhook)
+   · 4 correo como regalo (brochure, opcional) · 5 abre WhatsApp con el mensaje ya escrito. */
+(function () {
+  'use strict';
+  var root = document.getElementById('kog');
+  var K = window.KOG || { variant: 'general', cfg: {}, kw: '', zona: '', loc: '' };
+  var chat = document.getElementById('lead'), log = document.getElementById('chat-log');
+  var scrim = document.getElementById('scrim'), dock = document.getElementById('dock');
+  var fContact = document.getElementById('f-contact'), fGift = document.getElementById('f-gift');
+  var tel = document.getElementById('f-tel'), nom = document.getElementById('f-nombre'), mail = document.getElementById('f-email');
+  var typing = log.querySelector('.typing');
+  var WA = (root.getAttribute('data-wa') || '').replace(/\D/g, '');
+  var ENDPOINT = root.getAttribute('data-lead-endpoint') || '';
+  var STAGES = { bebes: 'Bebé (45 días a 1 año)', toddlers: '1 a 2 años (Toddlers)', discovery: '2 a 3 años (Discovery Preschool)', kinder: '3 a 6 años (Kínder)' };
+  var STAGE_GIFT = { bebes: 'Sala de Bebés', toddlers: 'Toddlers', discovery: 'Discovery Preschool', kinder: 'Kínder 1, 2 y 3' };
+  var WHEN = { manana: 'Entre semana, en la mañana', tarde: 'Entre semana, en la tarde' };
+  var mq = window.matchMedia('(max-width: 1023.98px)');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var dl = window.dataLayer = window.dataLayer || [];
+  var S = { step: 1, etapa: '', horario: '', nombre: '', telefono: '', email: '', leadId: '', started: false };
+  var lastFocus = null;
+
+  function uuid() { return (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'k' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10); }
+  function push(ev, p) {
+    if (window.WebDevTracking && WebDevTracking.push) return WebDevTracking.push(ev, p);
+    var o = { event: ev, event_id: uuid() }; for (var k in p) o[k] = p[k]; dl.push(o); return o.event_id;
+  }
+  function store(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
+  function q(sel) { return chat.querySelector(sel); }
+  function scrollLog() { log.scrollTop = log.scrollHeight; }
+  function firstControl() { return chat.querySelector('[data-ctl]:not([hidden]) button, [data-ctl]:not([hidden]) input:not([type="hidden"]), [data-ctl]:not([hidden]) a'); }
+
+  /* ---------- Conversación ---------- */
+  function showCtl(n) {
+    var ctls = chat.querySelectorAll('[data-ctl]');
+    for (var i = 0; i < ctls.length; i++) ctls[i].hidden = ctls[i].getAttribute('data-ctl') !== String(n);
+  }
+  function say(n, text) { var a = q('[data-a="' + n + '"]'); a.textContent = text; a.hidden = false; scrollLog(); }
+  function ask(n, then) {
+    showCtl(0);
+    var m = q('[data-q="' + n + '"]');
+    function show() { typing.hidden = true; m.hidden = false; showCtl(n); scrollLog(); if (then) then(); }
+    log.appendChild(typing); typing.hidden = false; scrollLog();
+    setTimeout(show, 550);
+  }
+  function engaged() { return mq.matches ? chat.classList.contains('is-open') : chat.contains(document.activeElement); }
+  function step(n) {
+    S.step = n;
+    push('chat_step', { step: n, variant: K.variant });
+    var wasEngaged = engaged();
+    ask(n, function () {
+      if (!wasEngaged) return;
+      var el = n === 3 ? (S.nombre || nom.value ? tel : nom) : n === 4 ? mail : firstControl();
+      if (el) el.focus({ preventScroll: true });
+    });
+  }
+  function pickStage(v) {
+    if (!STAGES[v] || S.step !== 1) return;
+    S.etapa = v;
+    if (!S.started) { S.started = true; push('chat_start', { variant: K.variant, stage_selected: v }); }
+    push('select_stage_tab', { stage_selected: v, form_location: 'chat' });
+    say(1, STAGES[v]);
+    step(2);
+  }
+  function pickWhen(v) {
+    if (!WHEN[v] || S.step !== 2) return;
+    S.horario = v; say(2, WHEN[v]); step(3);
+  }
+
+  /* ---------- Hoja inferior (móvil) / card sticky (desktop) ---------- */
+  function open(trigger) {
+    var st = trigger && trigger.getAttribute('data-stage');
+    if (!mq.matches) {
+      chat.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      var c0 = firstControl(); if (c0) c0.focus({ preventScroll: true });
+      if (st) pickStage(st);
+      return;
+    }
+    lastFocus = trigger || document.activeElement;
+    chat.setAttribute('role', 'dialog'); chat.setAttribute('aria-modal', 'true');
+    chat.classList.add('is-open'); scrim.classList.add('is-open'); document.documentElement.classList.add('is-locked');
+    dock.classList.remove('is-on');
+    if (st) pickStage(st);
+    setTimeout(function () { var b = firstControl(); if (b) b.focus({ preventScroll: true }); }, 360);
+  }
+  function close() {
+    if (!chat.classList.contains('is-open')) return;
+    chat.classList.remove('is-open'); scrim.classList.remove('is-open'); document.documentElement.classList.remove('is-locked');
+    chat.removeAttribute('role'); chat.removeAttribute('aria-modal');
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+    onScroll();
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    var o = t.closest('[data-open-lead]'); if (o) { e.preventDefault(); open(o); return; }
+    if (t.closest('[data-close-lead]')) { close(); return; }
+    var s = t.closest('[data-stage-pick]'); if (s) { pickStage(s.getAttribute('data-stage-pick')); return; }
+    var w = t.closest('[data-when-pick]'); if (w) { pickWhen(w.getAttribute('data-when-pick')); return; }
+    if (t.closest('[data-skip-gift]')) { push('brochure_skip', { variant: K.variant }); say(4, 'Ahora no, gracias'); finish(); return; }
+    var p = t.closest('[data-phone]'); if (p) push('phone_click', { cta_position: p.getAttribute('data-phone'), variant: K.variant });
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  if (mq.addEventListener) mq.addEventListener('change', function () { if (!mq.matches) close(); });
+
+  /* Cerrar la hoja arrastrando hacia abajo desde la cabecera */
+  (function () {
+    var y0 = null, dy = 0, head = chat.querySelector('.chat__head');
+    head.addEventListener('touchstart', function (e) { if (!mq.matches || e.target.closest('button')) return; y0 = e.touches[0].clientY; dy = 0; chat.style.transition = 'none'; }, { passive: true });
+    head.addEventListener('touchmove', function (e) { if (y0 === null) return; dy = Math.max(0, e.touches[0].clientY - y0); chat.style.transform = 'translateY(' + dy + 'px)'; }, { passive: true });
+    head.addEventListener('touchend', function () { if (y0 === null) return; chat.style.transition = ''; chat.style.transform = ''; if (dy > 90) close(); y0 = null; });
+  })();
+
+  /* Barra fija móvil: aparece cuando el arranque del hero sale de pantalla */
+  var starter = document.querySelector('.starter'), endZone = document.querySelector('.close');
+  /* Visible entre el arranque del hero y el cierre: ahí el cierre y el footer ya tienen su propio botón. */
+  function onScroll() {
+    if (!starter || chat.classList.contains('is-open')) return;
+    var past = starter.getBoundingClientRect().bottom < 0;
+    var atEnd = endZone && endZone.getBoundingClientRect().top < window.innerHeight - 80;
+    dock.classList.toggle('is-on', past && !atEnd);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* ---------- Paso 3: nombre + WhatsApp (el lead) ---------- */
+  var prev = store('kog_lead');
+  if (prev) { if (prev.nombre) nom.value = prev.nombre; if (prev.telefono) tel.value = prev.telefono; if (prev.email) mail.value = prev.email; }
+  tel.addEventListener('input', function () {
+    var d = tel.value.replace(/\D/g, '');
+    if (d.length > 10 && d.indexOf('52') === 0) d = d.slice(d.length - 10);
+    d = d.slice(0, 10);
+    tel.value = d.replace(/^(\d{2})(\d{0,4})(\d{0,4}).*/, function (m, a, b, c) { return [a, b, c].filter(Boolean).join(' '); });
+  });
+  function setErr(id, msg, input) { document.getElementById(id).textContent = msg || ''; input.setAttribute('aria-invalid', msg ? 'true' : 'false'); return !msg; }
+  function validContact() {
+    var ok1 = setErr('err-nombre', nom.value.trim().length >= 2 ? '' : 'Escribe tu nombre para saludarte.', nom);
+    var ok2 = setErr('err-tel', tel.value.replace(/\D/g, '').length === 10 ? '' : 'Tu WhatsApp va a 10 dígitos, por ejemplo 55 1234 5678.', tel);
+    if (!ok1) nom.focus(); else if (!ok2) tel.focus();
+    return ok1 && ok2;
+  }
+  function validGift() {
+    var ok = setErr('err-email', /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail.value.trim()) ? '' : 'Revisa tu correo, por ejemplo nombre@correo.com.', mail);
+    if (!ok) mail.focus();
+    return ok;
+  }
+  /* Validación en captura sobre window: corre antes que dtr_and_tracking.js (captura en document),
+     así un intento inválido no registra form_submit. */
+  window.addEventListener('submit', function (e) {
+    if ((e.target === fContact && !validContact()) || (e.target === fGift && !validGift())) { e.preventDefault(); e.stopPropagation(); }
+  }, true);
+
+  function sha256(s) {
+    if (!(window.crypto && crypto.subtle && window.TextEncoder)) return Promise.resolve('');
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)).then(function (b) {
+      return Array.prototype.map.call(new Uint8Array(b), function (x) { return ('0' + x.toString(16)).slice(-2); }).join('');
+    }).catch(function () { return ''; });
+  }
+  function leadPayload(paso) {
+    var attr = (window.WebDevTracking && WebDevTracking.getAttribution) ? WebDevTracking.getAttribution() : {};
+    var o = { paso: paso, event_id: S.leadId, nombre: S.nombre, telefono: S.telefono, telefono_e164: '+52' + S.telefono, email: S.email,
+      etapa: S.etapa, horario_visita: S.horario, variante: K.variant, variante_origen: K.source, kw: K.kw, zona: K.loc || '',
+      pagina: location.origin + location.pathname, ts: new Date().toISOString() };
+    for (var a in attr) if (o[a] === undefined) o[a] = attr[a];
+    return o;
+  }
+  function send(payload) {
+    if (!ENDPOINT) return;
+    try { fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain;charset=UTF-8' }, body: JSON.stringify(payload) }); } catch (err) { /* el lead igual viaja en el mensaje de WhatsApp */ }
+  }
+
+  fContact.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (S.step !== 3) return;
+    S.nombre = nom.value.trim().slice(0, 60);
+    S.telefono = tel.value.replace(/\D/g, '');
+    S.leadId = fContact.event_id.value || push('form_submit', { form_id: 'kog_chat_contacto' });
+    store('kog_lead', { nombre: S.nombre, telefono: tel.value, email: mail.value.trim() });
+    say(3, S.nombre + ' · ' + tel.value);
+    q('[data-gift-stage]').textContent = STAGE_GIFT[S.etapa] || 'tu etapa';
+    q('[data-gift-name]').textContent = S.nombre.split(' ')[0];
+    sha256('+52' + S.telefono).then(function (hp) {
+      dl.push({ event: 'generate_lead', event_id: S.leadId, form_id: 'kog_chat_contacto', lead_channel: 'whatsapp',
+        child_age_group: S.etapa, visit_preference: S.horario, variant: K.variant, variant_source: K.source, search_keyword: K.kw,
+        phone_sha256: hp, user_data: { sha256_phone_number: hp } });
+    });
+    send(leadPayload('contacto'));
+    step(4);
+  });
+
+  /* ---------- Paso 4: correo como regalo (brochure) ---------- */
+  fGift.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (S.step !== 4) return;
+    S.email = mail.value.trim().toLowerCase();
+    store('kog_lead', { nombre: S.nombre, telefono: tel.value, email: S.email });
+    say(4, S.email);
+    var evid = fGift.event_id.value || push('form_submit', { form_id: 'kog_chat_brochure' });
+    Promise.all([sha256(S.email), sha256('+52' + S.telefono)]).then(function (h) {
+      dl.push({ event: 'brochure_request', event_id: evid, lead_event_id: S.leadId, form_id: 'kog_chat_brochure', child_age_group: S.etapa, variant: K.variant,
+        email_sha256: h[0], phone_sha256: h[1], user_data: { sha256_email_address: h[0], sha256_phone_number: h[1] } });
+    });
+    send(leadPayload('brochure'));
+    finish();
+  });
+
+  /* ---------- Paso 5: WhatsApp con el mensaje armado ---------- */
+  function waMessage() {
+    var l = ['Hola, Kids on Going. Soy ' + S.nombre + ' y me gustaría agendar una visita al plantel.'];
+    l.push('Edad de mi peque: ' + (STAGES[S.etapa] || S.etapa) + '.');
+    if (S.horario) l.push('Me acomoda: ' + WHEN[S.horario].toLowerCase() + '.');
+    l.push('Me interesa: ' + (K.cfg.interes || 'admisiones') + '.');
+    if (S.email) l.push('Les dejé mi correo para el brochure: ' + S.email);
+    return l.join('\n');
+  }
+  function finish() {
+    if (S.step === 5) return;
+    var url = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(waMessage());
+    chat.querySelector('[data-wa-final]').href = url;
+    step(5);
+    if (!reduce) confetti();
+    var gone = false;
+    function go() { if (gone) return; gone = true; window.location.href = url; }
+    dl.push({ event: 'whatsapp_redirect', lead_event_id: S.leadId, variant: K.variant, with_email: !!S.email, eventCallback: go, eventTimeout: 1400 });
+    setTimeout(go, 1600);
+  }
+
+  /* ---------- Cámaras en vivo (la cosa viva) ---------- */
+  var tabs = [].slice.call(document.querySelectorAll('[data-cam-btn]'));
+  var camName = document.querySelector('[data-cam-name]');
+  function selectCam(btn, focus) {
+    var id = btn.getAttribute('data-cam-btn');
+    tabs.forEach(function (b) { var on = b === btn; b.setAttribute('aria-selected', on ? 'true' : 'false'); b.tabIndex = on ? 0 : -1; });
+    document.querySelectorAll('[data-cam]').forEach(function (img) { img.classList.toggle('is-on', img.getAttribute('data-cam') === id); });
+    camName.textContent = btn.textContent;
+    if (focus) btn.focus();
+    push('camera_select', { camera: id, variant: K.variant });
+  }
+  tabs.forEach(function (b, i) {
+    b.addEventListener('click', function () { selectCam(b); });
+    b.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (d) { e.preventDefault(); selectCam(tabs[(i + d + tabs.length) % tabs.length], true); }
+    });
+  });
+
+  /* ---------- FAQ: ver más ---------- */
+  var more = document.getElementById('faq-more'), faq = document.getElementById('faq-list');
+  more.addEventListener('click', function () { faq.classList.remove('is-collapsed'); more.hidden = true; more.setAttribute('aria-expanded', 'true'); });
+
+  /* ---------- Entradas al hacer scroll ---------- */
+  function safe(fn, name) { try { fn(); } catch (err) { if (window.console) console.warn('[KOG] ' + name, err); } }
+  var rise = document.querySelectorAll('[data-rise]');
+  safe(function () {
+    if (!('IntersectionObserver' in window)) { rise.forEach(function (el) { el.classList.add('is-in'); }); return; }
+    var io = new IntersectionObserver(function (en) { en.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('is-in'); io.unobserve(x.target); } }); }, { rootMargin: '0px 0px -2% 0px', threshold: 0.01 });
+    rise.forEach(function (el) { io.observe(el); });
+    /* Red de seguridad: a los 6 s se muestra todo lo que siga oculto en pantalla. */
+    setTimeout(function () { rise.forEach(function (el) { if (!el.classList.contains('is-in') && el.getBoundingClientRect().top < window.innerHeight) el.classList.add('is-in'); }); }, 6000);
+  }, 'reveal');
+
+  /* ---------- Contador de la banda de datos (el valor final ya está en el HTML) ---------- */
+  safe(function () {
+    var nums = document.querySelectorAll('[data-count]');
+    if (!('IntersectionObserver' in window)) return;
+    function run(el) {
+      var end = +el.getAttribute('data-count'), suf = el.getAttribute('data-suffix') || '', t0 = null, dur = 1100;
+      function f(t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3); el.textContent = Math.round(end * e) + suf; if (k < 1) requestAnimationFrame(f); }
+      requestAnimationFrame(f);
+    }
+    var co = new IntersectionObserver(function (en) { en.forEach(function (x) { if (x.isIntersecting) { run(x.target); co.unobserve(x.target); } }); }, { threshold: 0.01 });
+    nums.forEach(function (el) { co.observe(el); });
+  }, 'count');
+
+  /* ---------- Barra de progreso de lectura (color de contraste) ---------- */
+  safe(function () {
+    var bar = document.getElementById('progress'), ticking = false;
+    function upd() { var h = document.documentElement.scrollHeight - window.innerHeight; bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, window.scrollY / h) : 0) + ')'; ticking = false; }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+    upd();
+  }, 'progress');
+})();
+
+/* Confeti breve en los colores del logo al completar la conversación */
+function confetti() {
+  var host = document.getElementById('chat-log'); if (!host || !host.animate) return;
+  var colors = ['#F8A11F', '#1167AE', '#902F8B', '#94C13F', '#5B805E'];
+  for (var i = 0; i < 18; i++) {
+    var p = document.createElement('span');
+    p.setAttribute('aria-hidden', 'true');
+    p.style.cssText = 'position:absolute;left:50%;bottom:30%;width:8px;height:8px;border-radius:' + (i % 2 ? '50%' : '2px') + ';background:' + colors[i % colors.length] + ';pointer-events:none;';
+    host.style.position = 'relative'; host.appendChild(p);
+    var dx = (Math.random() - .5) * 260, dy = -80 - Math.random() * 140;
+    p.animate([{ transform: 'translate(0,0) rotate(0)', opacity: 1 }, { transform: 'translate(' + dx + 'px,' + dy + 'px) rotate(' + (Math.random() * 540) + 'deg)', opacity: 0 }], { duration: 900 + Math.random() * 400, easing: 'cubic-bezier(0.23, 1, 0.32, 1)', fill: 'forwards' }).onfinish = (function (el) { return function () { el.remove(); }; })(p);
+  }
+}
+</script>
+</body>
+</html>
