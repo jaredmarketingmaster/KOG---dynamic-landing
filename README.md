@@ -24,6 +24,10 @@ Plantilla de seguimiento sugerida para Google Ads:
 {lpurl}?kw={keyword}&utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}
 ```
 
+## Guía de uso
+
+Manual con todas las versiones y ejemplos por palabra clave: `/guia/` (página interna, `noindex`).
+
 ## Notas
 
 - Este repositorio contiene solo la versión compilada. La fuente y el motor de compilación viven en el módulo 02_Web_Dev de la agencia; los cambios se hacen allá y se vuelven a publicar aquí.

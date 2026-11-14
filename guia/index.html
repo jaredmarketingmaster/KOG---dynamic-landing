@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de landings · Kids on Going</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Preahvihear&family=Poppins:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --sage:#5B805E; --forest:#446047; --navy:#3B435D; --ink:#3F3F3F; --muted:#555;
+    --mint:#F0F8F1; --lav:#ECEFF7; --blue:#1167AE; --blue-soft:#E3EEF8; --orange:#F8A11F; --orange-ink:#1F2124;
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; font:16px/1.6 'Poppins', system-ui, sans-serif; color:var(--ink); background:#fff; }
+  h1, h2, h3 { font-family:'Preahvihear', 'Poppins', sans-serif; font-weight:600; margin:0 0 .4em; line-height:1.2; }
+  h1 { color:var(--forest); font-size:clamp(2rem, 3vw + 1rem, 3rem); }
+  h2 { color:var(--forest); font-size:clamp(1.5rem, 1.4vw + 1rem, 2.1rem); }
+  h3 { color:var(--navy); font-size:1.25rem; }
+  p { margin:0 0 1em; }
+  a { color:var(--blue); text-underline-offset:3px; }
+  code { font:500 .875rem/1.4 ui-monospace, Consolas, monospace; background:var(--lav); padding:.15rem .45rem; border-radius:6px; word-break:break-all; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
+  header.top { background:#fff; border-bottom:1px solid #E4EDE5; }
+  header.top .wrap { display:flex; align-items:center; justify-content:space-between; gap:1rem; height:72px; }
+  header.top img { width:84px; height:auto; }
+  header.top a.live { display:inline-flex; align-items:center; gap:.5rem; padding:.6rem 1.1rem; border-radius:999px; background:var(--orange); color:var(--orange-ink); font-weight:600; text-decoration:none; }
+  .hero { padding:48px 0 40px; background:#fff; }
+  .hero p.lead { font-size:1.125rem; color:var(--muted); max-width:62ch; }
+  .base { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; margin-top:1rem; padding:1rem 1.2rem; border-radius:20px; background:var(--mint); }
+  .base b { color:var(--forest); }
+  nav.toc { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.25rem; }
+  nav.toc a { padding:.45rem .9rem; border-radius:999px; background:var(--lav); color:var(--navy); text-decoration:none; font-size:.9375rem; }
+  section { padding:48px 0; }
+  section.alt { background:var(--mint); }
+  section.blue { background:var(--blue); color:#fff; }
+  section.blue h2, section.blue h3 { color:#fff; }
+  section.blue p, section.blue li { color:var(--blue-soft); }
+  section.blue code { background:#0A4A80; color:#fff; }
+  .steps { list-style:none; padding:0; margin:1.25rem 0 0; display:grid; gap:1rem; }
+  @media (min-width:860px) { .steps { grid-template-columns:repeat(3, 1fr); } }
+  .steps li { padding:1.1rem 1.2rem; border-radius:20px; background:#0D5592; }
+  .steps b { display:block; color:#fff; font-family:'Preahvihear', sans-serif; font-size:1.125rem; margin-bottom:.25rem; }
+
+  .version { display:grid; gap:1.5rem; padding:1.5rem; border-radius:28px; background:#fff; margin-top:1.5rem; }
+  section:not(.alt) .version { background:var(--mint); }
+  @media (min-width:900px) { .version { grid-template-columns:300px 1fr; gap:2rem; } }
+  .version .tag { display:inline-block; padding:.3rem .75rem; border-radius:999px; background:var(--orange); color:var(--orange-ink); font-weight:600; font-size:.875rem; margin-bottom:.6rem; }
+  .version .h1 { font-family:'Preahvihear', sans-serif; color:var(--forest); font-size:1.375rem; line-height:1.25; margin:.4rem 0 .6rem; }
+  .version .data { font-size:.9375rem; color:var(--muted); margin:0 0 .8rem; }
+  .version .order { font-size:.9375rem; margin:0; }
+  .version .order span { display:inline-block; margin:.15rem .2rem .15rem 0; padding:.15rem .6rem; border-radius:999px; background:var(--lav); color:var(--navy); font-size:.8125rem; }
+  .urlrow { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem; margin:.3rem 0 1rem; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:.45rem; min-height:40px; padding:.45rem 1rem; border:0; border-radius:999px; font:500 .9375rem/1.2 'Poppins', sans-serif; cursor:pointer; text-decoration:none; transition:transform 140ms cubic-bezier(.23,1,.32,1), background-color 160ms; }
+  .btn:active { transform:scale(.97); }
+  .btn-open { background:var(--forest); color:#fff; }
+  .btn-copy { background:var(--lav); color:var(--navy); }
+  .btn-copy.ok { background:#DDF0DF; color:var(--forest); }
+  table { width:100%; border-collapse:collapse; font-size:.9375rem; }
+  th, td { text-align:left; padding:.6rem .5rem; border-bottom:1px solid #E4EDE5; vertical-align:top; }
+  th { color:var(--navy); font-weight:600; font-size:.875rem; }
+  td a { font-weight:500; }
+  .kw { white-space:nowrap; }
+  .check { list-style:none; padding:0; margin:0; display:grid; gap:.6rem; }
+  .check li { padding:.8rem 1rem; border-radius:16px; background:#fff; }
+  .check b { color:var(--navy); }
+  footer { padding:32px 0 48px; color:var(--muted); font-size:.875rem; }
+  @media (max-width:640px) { th:nth-child(3), td:nth-child(3) { display:none; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <img src="../assets/brand/logo.png" alt="Kids on Going" width="84" height="58">
+    <a class="live" href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/" target="_blank" rel="noopener">Ver landing en vivo</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Guía de las landings de Search</h1>
+      <p class="lead">Una landing por grupo de anuncios de Google Ads. Cada una cambia su titular, el orden de sus secciones y sus preguntas frecuentes según la palabra clave que activó el anuncio. Aquí están todas, en vivo, con ejemplos para ver el cambio.</p>
+      <div class="base"><b>Dirección base:</b> <code id="base">https://jaredmarketingmaster.github.io/KOG---dynamic-landing/</code> <button class="btn btn-copy" data-copy="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/">Copiar</button></div>
+      <nav class="toc" aria-label="Contenido">
+        <a href="#como">Cómo funciona</a><a href="#v1">1 · Guardería cerca</a><a href="#v2">2 · Kínder cerca</a><a href="#v3">3 · Kínder bilingüe</a><a href="#v4">4 · Guardería bilingüe</a><a href="#v5">5 · Maternal</a><a href="#general">General</a><a href="#ads">Google Ads</a><a href="#probar">Cómo probar</a>
+      </nav>
+    </div>
+  </div>
+
+  <section class="blue" id="como">
+    <div class="wrap">
+      <h2>Cómo decide qué versión mostrar</h2>
+      <p>La página revisa la dirección en este orden y usa la primera que encuentre:</p>
+      <ol class="steps">
+        <li><b>1. <code>?v=</code></b>Fuerza una versión: <code>general</code>, <code>guarderia-cerca</code>, <code>kinder-cerca</code>, <code>kinder-bilingue</code>, <code>guarderia-bilingue</code>, <code>maternal</code>.</li>
+        <li><b>2. La palabra clave</b><code>?kw=</code> o <code>utm_term</code>. «bilingüe» + «kínder» → kínder bilingüe; «bilingüe» → guardería bilingüe; «maternal», «estimulación» o «bebé» → maternal; «kínder» o «preescolar» → kínder cerca; «guardería» → guardería cerca.</li>
+        <li><b>3. La carpeta</b>Si no hay palabra clave, cada carpeta muestra su propia versión. La raíz muestra la general.</li>
+      </ol>
+      <p style="margin-top:1.25rem">Además detecta la zona en la palabra clave (Santa Fe, Bosques, Cuajimalpa, Vista Hermosa, El Contadero, Interlomas): la escribe en el subtítulo y la resalta en el mapa. El texto de la búsqueda nunca se imprime tal cual: solo elige entre titulares aprobados.</p>
+    </div>
+  </section>
+
+  <section id="versiones">
+    <div class="wrap">
+      <h2>Las versiones, en orden de impresiones</h2>
+      <p>Datos del informe de pauta, sep 2025 – oct 2026.</p>
+
+      <article class="version" id="v1">
+        <div>
+          <span class="tag">Grupo 1</span>
+          <h3>Guarderías cerca de mí</h3>
+          <p class="data">38,399 impresiones · 3,977 clics · 60.9% de todos los clics</p>
+          <p class="h1">«La guardería cerca que ves en vivo»</p>
+          <p class="order">Orden: <span>Ubicación</span><span>Cámaras</span><span>Horario</span><span>Etapas</span><span>Instalaciones</span><span>FAQ</span></p>
+        </div>
+        <div>
+          <p><b>URL final del grupo:</b></p>
+          <div class="urlrow"><code>https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-cerca-de-mi/</code><button class="btn btn-copy" data-copy="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-cerca-de-mi/">Copiar</button><a class="btn btn-open" href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-cerca-de-mi/" target="_blank" rel="noopener">Abrir</a></div>
+          <table>
+            <thead><tr><th>Si la búsqueda fue…</th><th>Qué cambia</th><th>Enlace de prueba</th></tr></thead>
+            <tbody>
+              <tr><td class="kw">guarderías cerca de mí</td><td>Versión base del grupo</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-cerca-de-mi/?kw=guarderias+cerca+de+mi" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">guarderías cuajimalpa</td><td>Subtítulo «a minutos de Cuajimalpa» y zona resaltada en el mapa</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-cerca-de-mi/?kw=guarderias+cuajimalpa" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">guardería santa fe</td><td>Subtítulo «a minutos de Santa Fe»</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-cerca-de-mi/?kw=guarderia+santa+fe" target="_blank" rel="noopener">Ver</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="version" id="v2">
+        <div>
+          <span class="tag">Grupo 2</span>
+          <h3>Kínder cerca de mí</h3>
+          <p class="data">7,660 + 3,463 impresiones (dos variantes de la palabra)</p>
+          <p class="h1">«Kínder SEP cerca de ti, hasta las 7»</p>
+          <p class="order">Orden: <span>Ubicación</span><span>Kínder SEP</span><span>Horario</span><span>Bilingüe</span><span>Instalaciones</span><span>FAQ</span></p>
+        </div>
+        <div>
+          <p><b>URL final del grupo:</b></p>
+          <div class="urlrow"><code>https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-cerca-de-mi/</code><button class="btn btn-copy" data-copy="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-cerca-de-mi/">Copiar</button><a class="btn btn-open" href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-cerca-de-mi/" target="_blank" rel="noopener">Abrir</a></div>
+          <table>
+            <thead><tr><th>Si la búsqueda fue…</th><th>Qué cambia</th><th>Enlace de prueba</th></tr></thead>
+            <tbody>
+              <tr><td class="kw">kínder cerca de mí</td><td>Versión base del grupo</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-cerca-de-mi/?kw=kinder+cerca+de+mi" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">preescolar cerca de mí</td><td>Misma versión (preescolar = kínder)</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-cerca-de-mi/?kw=preescolar+cerca+de+mi" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">kínder bosques de las lomas</td><td>Subtítulo «a minutos de Bosques de las Lomas»</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-cerca-de-mi/?kw=kinder+bosques+de+las+lomas" target="_blank" rel="noopener">Ver</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="version" id="v3">
+        <div>
+          <span class="tag">Grupo 3</span>
+          <h3>Kínder bilingüe</h3>
+          <p class="data">6,605 impresiones · CTR 7.52%</p>
+          <p class="h1">«Kínder bilingüe con inglés diario»</p>
+          <p class="order">Orden: <span>Bilingüe</span><span>Kínder SEP</span><span>Instalaciones</span><span>Horario</span><span>Ubicación</span><span>FAQ</span></p>
+        </div>
+        <div>
+          <p><b>URL final del grupo:</b></p>
+          <div class="urlrow"><code>https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-bilingue/</code><button class="btn btn-copy" data-copy="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-bilingue/">Copiar</button><a class="btn btn-open" href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-bilingue/" target="_blank" rel="noopener">Abrir</a></div>
+          <table>
+            <thead><tr><th>Si la búsqueda fue…</th><th>Qué cambia</th><th>Enlace de prueba</th></tr></thead>
+            <tbody>
+              <tr><td class="kw">kínder bilingüe</td><td>Versión base del grupo</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-bilingue/?kw=kinder+bilingue" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">kínder bilingüe santa fe</td><td>Subtítulo «a minutos de Santa Fe»</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-bilingue/?kw=kinder+bilingue+santa+fe" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">preescolar en inglés</td><td>Misma versión (inglés = bilingüe)</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/kinder-bilingue/?kw=preescolar+en+ingles" target="_blank" rel="noopener">Ver</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="version" id="v4">
+        <div>
+          <span class="tag">Grupo 4</span>
+          <h3>Guardería bilingüe</h3>
+          <p class="data">3,712 impresiones · CTR 8.94%</p>
+          <p class="h1">«Guardería bilingüe desde bebés»</p>
+          <p class="order">Orden: <span>Bilingüe</span><span>Cámaras</span><span>Etapas</span><span>Horario</span><span>Ubicación</span><span>FAQ</span></p>
+        </div>
+        <div>
+          <p><b>URL final del grupo:</b></p>
+          <div class="urlrow"><code>https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-bilingue/</code><button class="btn btn-copy" data-copy="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-bilingue/">Copiar</button><a class="btn btn-open" href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-bilingue/" target="_blank" rel="noopener">Abrir</a></div>
+          <table>
+            <thead><tr><th>Si la búsqueda fue…</th><th>Qué cambia</th><th>Enlace de prueba</th></tr></thead>
+            <tbody>
+              <tr><td class="kw">guardería bilingüe</td><td>Versión base del grupo</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-bilingue/?kw=guarderia+bilingue" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">guardería bilingüe interlomas</td><td>Subtítulo con Interlomas y zona resaltada en el mapa</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guarderia-bilingue/?kw=guarderia+bilingue+interlomas" target="_blank" rel="noopener">Ver</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="version" id="v5">
+        <div>
+          <span class="tag">Grupo 5</span>
+          <h3>Maternal / estimulación temprana cerca de mí</h3>
+          <p class="data">Búsquedas reales: «maternal cerca de mi» 44 clics · «estimulación temprana cerca de mi» 26 clics</p>
+          <p class="h1">«Maternal cerca de ti, con bitácora»</p>
+          <p class="order">Orden: <span>Etapas</span><span>Cámaras</span><span>Horario</span><span>Ubicación</span><span>Instalaciones</span><span>FAQ</span></p>
+        </div>
+        <div>
+          <p><b>URL final del grupo:</b></p>
+          <div class="urlrow"><code>https://jaredmarketingmaster.github.io/KOG---dynamic-landing/maternal-cerca-de-mi/</code><button class="btn btn-copy" data-copy="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/maternal-cerca-de-mi/">Copiar</button><a class="btn btn-open" href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/maternal-cerca-de-mi/" target="_blank" rel="noopener">Abrir</a></div>
+          <table>
+            <thead><tr><th>Si la búsqueda fue…</th><th>Qué cambia</th><th>Enlace de prueba</th></tr></thead>
+            <tbody>
+              <tr><td class="kw">maternal cerca de mí</td><td>Versión base del grupo</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/maternal-cerca-de-mi/?kw=maternal+cerca+de+mi" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">estimulación temprana bosques</td><td>Misma versión, subtítulo con Bosques de las Lomas</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/maternal-cerca-de-mi/?kw=estimulacion+temprana+bosques" target="_blank" rel="noopener">Ver</a></td></tr>
+              <tr><td class="kw">guardería para bebés</td><td>Misma versión («bebé» activa maternal)</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/maternal-cerca-de-mi/?kw=guarderia+para+bebes" target="_blank" rel="noopener">Ver</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="alt" id="general">
+    <div class="wrap">
+      <h2>La versión general (raíz)</h2>
+      <p>Para marca («kids on going») y campañas amplias. Sin palabra clave muestra «Ves a tu peque en vivo, de 7 a 7»; con palabra clave se convierte sola en la versión que corresponde.</p>
+      <div class="urlrow"><code>https://jaredmarketingmaster.github.io/KOG---dynamic-landing/</code><button class="btn btn-copy" data-copy="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/">Copiar</button><a class="btn btn-open" href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/" target="_blank" rel="noopener">Abrir</a></div>
+      <table style="background:#fff;border-radius:16px">
+        <thead><tr><th>Dirección</th><th>Se convierte en</th><th>Enlace de prueba</th></tr></thead>
+        <tbody>
+          <tr><td class="kw">sin parámetros</td><td>General</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/" target="_blank" rel="noopener">Ver</a></td></tr>
+          <tr><td class="kw">?kw=guarderias cerca de mi</td><td>Grupo 1 · Guardería cerca</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/?kw=guarderias+cerca+de+mi" target="_blank" rel="noopener">Ver</a></td></tr>
+          <tr><td class="kw">?kw=kinder cerca de mi</td><td>Grupo 2 · Kínder cerca</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/?kw=kinder+cerca+de+mi" target="_blank" rel="noopener">Ver</a></td></tr>
+          <tr><td class="kw">?kw=kinder bilingue santa fe</td><td>Grupo 3 · Kínder bilingüe (Santa Fe)</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/?kw=kinder+bilingue+santa+fe" target="_blank" rel="noopener">Ver</a></td></tr>
+          <tr><td class="kw">?kw=guarderia bilingue</td><td>Grupo 4 · Guardería bilingüe</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/?kw=guarderia+bilingue" target="_blank" rel="noopener">Ver</a></td></tr>
+          <tr><td class="kw">?kw=maternal cerca de mi</td><td>Grupo 5 · Maternal</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/?kw=maternal+cerca+de+mi" target="_blank" rel="noopener">Ver</a></td></tr>
+          <tr><td class="kw">?v=kinder-bilingue</td><td>Forzado a Grupo 3</td><td><a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/?v=kinder-bilingue" target="_blank" rel="noopener">Ver</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="ads">
+    <div class="wrap">
+      <h2>Configuración en Google Ads</h2>
+      <h3>1. URL final de cada grupo</h3>
+      <p>La de su tarjeta de arriba (botón «Copiar»).</p>
+      <h3>2. Plantilla de seguimiento</h3>
+      <p>A nivel de cuenta o de campaña. Manda la palabra clave a la página y deja las UTM para medir:</p>
+      <div class="urlrow"><code>{lpurl}?kw={keyword}&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign={campaignid}&amp;utm_content={adgroupid}&amp;utm_term={keyword}</code><button class="btn btn-copy" data-copy="{lpurl}?kw={keyword}&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign={campaignid}&amp;utm_content={adgroupid}&amp;utm_term={keyword}">Copiar</button></div>
+      <h3>3. Conversión</h3>
+      <p>La conversión primaria es el evento <code>generate_lead</code>: se dispara cuando la familia deja su nombre y su WhatsApp en la conversación. Se configura en GTM (<code>GTM-P3QLCQC6</code>) como conversión de Google Ads con conversiones mejoradas (el teléfono ya va cifrado en SHA-256).</p>
+    </div>
+  </section>
+
+  <section class="alt" id="probar">
+    <div class="wrap">
+      <h2>Cómo probarla como lo vería una familia</h2>
+      <ul class="check">
+        <li><b>En el celular:</b> abre cualquier enlace de prueba desde tu teléfono. El 87% de las visitas de Google Ads llega desde el celular.</li>
+        <li><b>La conversación:</b> toca una edad en la primera pantalla, elige un horario, escribe un nombre y un WhatsApp, y en el regalo del brochure toca «Ahora no». Se abre WhatsApp con el mensaje armado: <b>no lo envíes</b> si es una prueba.</li>
+        <li><b>Las cámaras:</b> en la foto del hero cambia entre Atelier, Aulas, Jardín y Huerto.</li>
+        <li><b>Si ves una versión vieja:</b> recarga con Ctrl + F5. GitHub Pages puede tardar unos minutos en publicar un cambio.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pendientes">
+    <div class="wrap">
+      <h2>Antes de lanzar los anuncios</h2>
+      <ul class="check" style="gap:.5rem">
+        <li style="background:var(--mint)"><b>Destino del lead:</b> conectar el webhook del CRM (GoHighLevel). Hoy el lead solo viaja en el mensaje de WhatsApp y en la medición.</li>
+        <li style="background:var(--mint)"><b>Brochure:</b> la página promete enviarlo por WhatsApp y al correo; admisiones o una automatización debe mandarlo.</li>
+        <li style="background:var(--mint)"><b>Conversión en Google Ads:</b> crear la acción sobre <code>generate_lead</code> (aún no hay ID <code>AW-</code>).</li>
+        <li style="background:var(--mint)"><b>Validar con Dirección de KOG:</b> «grupos de alrededor de 12 niños», «te respondemos en menos de 5 min», el recorrido de 45 min y que el WhatsApp 55 6116 7213 abra el chat correcto.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Esta guía: <a href="https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guia/">https://jaredmarketingmaster.github.io/KOG---dynamic-landing/guia/</a> · Repositorio: <a href="https://github.com/jaredmarketingmaster/KOG---dynamic-landing" target="_blank" rel="noopener">jaredmarketingmaster/KOG---dynamic-landing</a> · GitHub Pages · Actualizado el 14 de noviembre de 2026.</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('click', function (e) {
+  var b = e.target.closest('[data-copy]'); if (!b) return;
+  var txt = b.getAttribute('data-copy');
+  function done() { var t = b.textContent; b.textContent = 'Copiado'; b.classList.add('ok'); setTimeout(function () { b.textContent = t; b.classList.remove('ok'); }, 1400); }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(txt).then(done, function () { window.prompt('Copia la dirección:', txt); }); }
+  else { window.prompt('Copia la dirección:', txt); }
+});
+</script>
+</body>
+</html>
