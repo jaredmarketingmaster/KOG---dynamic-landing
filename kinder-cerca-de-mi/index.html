@@ -8,8 +8,8 @@
      tools/generar_variantes.py (no editarlas a mano). -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kínder SEP cerca de ti en Palo Alto, Cuajimalpa | Kids on Going</title>
-<meta name="description" content="Guardería y kínder bilingüe SEP en Granjas Palo Alto, a minutos de Santa Fe. 22 cámaras en vivo, de 7:00 a 7:00 pm, desde 45 días. Agenda tu visita.">
+<title>Kínder incorporado a SEP cerca de ti | Kids on Going</title>
+<meta name="description" content="Guardería y kínder bilingüe incorporado a la SEP en Granjas Palo Alto, cerca de Santa Fe. 22 cámaras en vivo, de 7 am a 7 pm, desde 45 días. Agenda tu visita.">
 <meta name="robots" content="noindex, follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Guardería y Kínder bilingüe en Palo Alto | Kids on Going">
@@ -174,10 +174,12 @@ html.is-locked { overflow:hidden; }
 @keyframes kogFloat { to { transform:translate3d(0, -18px, 0); } }
 @media (max-width:1023.98px) { .wd .floaters { display:none; } } /* sin z-index: la hoja del chat (z 70) debe quedar sobre el fondo oscuro (z 60) */
 .wd .hero__grid { display:grid; gap:1.75rem; }
-.wd .hero__sub { font-size:1.125rem; color:var(--text-secondary); max-width:50ch; margin-bottom:.9rem; }
-.wd .hero__meta { display:flex; align-items:center; gap:.5rem; font:400 1rem/1.4 var(--font-heading); color:var(--forest); margin-bottom:1.5rem; }
-.wd .hero__meta svg { color:var(--sage); }
-@media (max-width:767.98px) { .wd .hero__meta { display:none; } }
+.wd .hero__sub { font-size:1.125rem; font-weight:600; color:var(--ink); max-width:52ch; margin-bottom:.75rem; }
+.wd .hero__time { font-size:1rem; color:var(--text-secondary); margin-bottom:1.5rem; }
+.wd .hero__time strong { color:var(--forest); font-weight:600; }
+.wd .hero__loc { display:flex; align-items:flex-start; gap:.5rem; margin:0 0 1rem; font-size:1rem; line-height:1.4; color:var(--text-secondary); }
+.wd .hero__loc svg { color:var(--sage); margin-top:1px; }
+.wd .hero__loc strong { display:block; font-weight:600; color:var(--forest); }
 .wd .proof { display:flex; flex-wrap:wrap; gap:.5rem; list-style:none; margin:1.25rem 0 0; padding:0; }
 .wd .proof li { display:inline-flex; align-items:center; gap:.45rem; padding:.5rem .95rem; border-radius:var(--radius-pill); background:var(--mint); font-size:.8125rem; font-weight:500; color:var(--forest); }
 .wd .proof li i { width:9px; height:9px; border-radius:50%; flex:none; }
@@ -355,6 +357,15 @@ html.is-locked { overflow:hidden; }
 .wd .tl__legend span { display:inline-flex; align-items:center; gap:.45rem; }
 .wd .tl__legend i { width:14px; height:14px; border-radius:50%; display:inline-block; }
 .wd .facts { display:grid; gap:1rem 2rem; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); }
+.wd .talleres { margin-top:2rem; padding:1.35rem 1.5rem; border-radius:var(--radius-lg); background:#fff; }
+.wd .block:not(.is-mint):not(.is-lav) .talleres { background:var(--mint); }
+.wd .talleres h3 { margin-bottom:.75rem; }
+.wd .talleres__list { list-style:none; margin:0 0 .85rem; padding:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+.wd .talleres__list li { padding:.45rem 1rem; border-radius:var(--radius-pill); background:var(--pastel-apricot); color:#2D3A2E; font-family:var(--font-heading); font-size:1rem; }
+.wd .talleres__list li:nth-child(2) { background:var(--pastel-pistachio); }
+.wd .talleres__list li:nth-child(3) { background:var(--pastel-lilac); }
+.wd .talleres__list li:nth-child(4) { background:var(--brand-blue-soft); }
+.wd .talleres p { margin:0; font-size:1rem; color:var(--text-secondary); }
 .wd .fact b { display:block; font:400 1.125rem/1.3 var(--font-heading); color:var(--navy); }
 .wd .fact span { font-size:1rem; color:var(--text-secondary); }
 
@@ -367,7 +378,7 @@ html.is-locked { overflow:hidden; }
 .wd .bubbles p { margin:0; color:var(--text-secondary); max-width:34ch; }
 @media (min-width:860px) { .wd .bubbles p { margin-inline:auto; } }
 
-/* Kínder SEP */
+/* Kínder incorporado a la SEP */
 .wd .sep { display:flex; align-items:center; gap:1rem; padding:1.1rem 1.35rem; border-radius:var(--radius-lg); background:#fff; margin:1.25rem 0 1.5rem; }
 .wd .block:not(.is-mint):not(.is-lav) .sep { background:var(--mint); }
 .wd .sep__ic { width:52px; height:52px; border-radius:50%; background:var(--pastel-lilac); display:grid; place-items:center; color:#2D3A2E; flex:none; }
@@ -390,7 +401,7 @@ html.is-locked { overflow:hidden; }
 .wd .gallery figure { margin:0; scroll-snap-align:start; }
 .wd .gallery img { width:100%; aspect-ratio:4 / 5; object-fit:cover; border-radius:var(--radius-photo); background:#DCE8DD; }
 .wd .gallery figcaption { margin-top:.6rem; font:400 1.125rem/1.3 var(--font-heading); color:var(--navy); text-align:center; }
-@media (min-width:900px) { .wd .gallery { grid-template-columns:repeat(4, 1fr); gap:1.25rem; } }
+@media (min-width:900px) { .wd .gallery { grid-template-columns:repeat(3, 1fr); gap:1.25rem; } }
 
 /* FAQ: mosaicos rellenos */
 .wd .faqwrap { display:grid; gap:1.5rem; }
@@ -461,7 +472,7 @@ html.is-locked { overflow:hidden; }
   .wd.js-reveal [data-rise] { transform:none; }
 }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Kids on Going (KoG)", "url": "https://kidsongoing.com.mx/", "email": "informes@kidsongoing.com.mx"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto cuesta la colegiatura?", "acceptedAnswer": {"@type": "Answer", "text": "Depende de la etapa y del horario de salida. Te enviamos el brochure de costos por WhatsApp en minutos. Si tu empresa tiene convenio con nosotros (+50 empresas, TDU o CAMEXA), aplicas a precio preferencial de hasta 15%."}}, {"@type": "Question", "name": "¿Puedo ver a mi bebé durante el día?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Tienes acceso desde tu celular a 22 cámaras en tiempo real y a la App KoG, donde registramos biberones, pañales, siestas, comidas y actividades. En tu visita te lo mostramos funcionando."}}, {"@type": "Question", "name": "Si es Reggio Emilia, ¿solo juegan?", "acceptedAnswer": {"@type": "Answer", "text": "Juegan con estructura: el kínder está incorporado a la SEP (CCT 09PJN0093I), trabajamos robótica con Bee-Bot, inglés diario y Kids&Us desde Kínder 1. Aprenden desde su curiosidad, con objetivos claros por etapa."}}, {"@type": "Question", "name": "¿Qué pasa si mi horario cambia?", "acceptedAnswer": {"@type": "Answer", "text": "Abrimos de 7:00 am a 7:00 pm con 4 salidas: 1:00, 4:00, 5:30 y 7:00 pm. Por la tarde hay talleres vespertinos para que tu peque siga estimulado."}}, {"@type": "Question", "name": "¿Cuántos niños hay por grupo y cambian mucho las misses?", "acceptedAnswer": {"@type": "Answer", "text": "Trabajamos con grupos pequeños, de alrededor de 12 niños, y un equipo estable acompañado de cerca por la Directora."}}, {"@type": "Question", "name": "¿No conviene un colegio grande desde kínder?", "acceptedAnswer": {"@type": "Answer", "text": "Los primeros 6 años piden un entorno especializado en primera infancia, donde tu peque sea el centro. Te ayudamos a preparar la transición a la primaria que elijas."}}, {"@type": "Question", "name": "¿Y si se enferma? ¿Qué come?", "acceptedAnswer": {"@type": "Answer", "text": "Contamos con enfermera en planta de 11:00 a 7:00 pm, comedor con menú balanceado y un jardín de 700 m² para jugar al aire libre todos los días."}}, {"@type": "Question", "name": "¿Desde qué edad reciben y cuándo puede entrar?", "acceptedAnswer": {"@type": "Answer", "text": "Desde los 45 días de nacido hasta Kínder 3 (6 años). La guardería recibe todo el año según cupo; el kínder, para el ciclo en curso o el siguiente."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Kids on Going (KoG)", "url": "https://kidsongoing.com.mx/", "email": "informes@kidsongoing.com.mx"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto cuesta la colegiatura?", "acceptedAnswer": {"@type": "Answer", "text": "Depende de la etapa y del horario de salida. Te enviamos el brochure de costos por WhatsApp en minutos. Si tu empresa tiene convenio con nosotros (+50 empresas, TDU o CAMEXA), aplicas a precio preferencial de hasta 15%."}}, {"@type": "Question", "name": "¿Puedo ver a mi bebé durante el día?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Tienes acceso desde tu celular a 22 cámaras en tiempo real y a la App KoG, donde registramos biberones, pañales, siestas, comidas y actividades. En tu visita te lo mostramos funcionando."}}, {"@type": "Question", "name": "Si es Reggio Emilia, ¿solo juegan?", "acceptedAnswer": {"@type": "Answer", "text": "Juegan con estructura: el kínder está incorporado a la SEP (CCT 09PJN0093I), trabajamos robótica con Bee-Bot y, desde Kínder 1, doble programa de Inglés (Kids & Us y maestro de inglés especializado en el plantel). Aprenden desde su curiosidad, con objetivos claros por etapa."}}, {"@type": "Question", "name": "¿Qué pasa si mi horario cambia?", "acceptedAnswer": {"@type": "Answer", "text": "Tú eliges el horario: abrimos de 7:00 am a 7:00 pm con 5 salidas: 1:00 pm (guardería), 2:00 pm (fin del horario escolar de kínder), 4:00, 5:30 y 7:00 pm. Además hay talleres extracurriculares opcionales desde los 2 años."}}, {"@type": "Question", "name": "¿Cuántos niños hay por grupo y cambian mucho las misses?", "acceptedAnswer": {"@type": "Answer", "text": "Trabajamos con grupos pequeños, de alrededor de 12 niños, y un equipo estable acompañado de cerca por la Directora."}}, {"@type": "Question", "name": "¿No conviene un colegio grande desde kínder?", "acceptedAnswer": {"@type": "Answer", "text": "Los primeros 6 años piden un entorno especializado en primera infancia, donde tu peque sea el centro. Te ayudamos a preparar la transición a la primaria que elijas."}}, {"@type": "Question", "name": "¿Y si se enferma? ¿Qué come?", "acceptedAnswer": {"@type": "Answer", "text": "Contamos con enfermera en planta de 11:00 a 7:00 pm, comedor con menú balanceado y un jardín de 700 m² para jugar al aire libre todos los días."}}, {"@type": "Question", "name": "¿Desde qué edad reciben y cuándo puede entrar?", "acceptedAnswer": {"@type": "Answer", "text": "Desde los 45 días de nacido hasta Kínder 3 (6 años). La guardería recibe todo el año según cupo; el kínder, para el ciclo en curso o el siguiente."}}]}]}</script>
 </head>
 <body data-page-type="admisiones">
 <!-- Google Tag Manager (noscript) -->
@@ -500,20 +511,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="floaters" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     <div class="container hero__grid">
       <div class="hero__copy">
+        <p class="hero__loc"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span>Calle Fresnos 87, Granjas Palo Alto, Cuajimalpa<strong>Cerca de Bosques de las Lomas, Santa Fe y Cuajimalpa</strong></span></p>
         <h1 data-v-text="h1" data-dtr="h">Ves a tu peque en vivo, de 7 a 7</h1>
-        <p class="hero__sub" data-v-text="sub">Guardería y kínder bilingüe en Granjas Palo Alto, a minutos de Santa Fe y Bosques: 22 cámaras en tiempo real, inglés diario y Kínder incorporado a la SEP.</p>
-        <p class="hero__meta"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span data-v-text="meta">Granjas Palo Alto, Cuajimalpa · de 45 días a 6 años</span></p>
+        <p class="hero__sub" data-v-text="sub">Guardería y Kínder bilingüe: 22 cámaras en tiempo real, doble programa de Inglés, filosofía Reggio Emilia, comedor incluido, Kínder incorporado a la SEP, 700 mts de jardín.</p>
+        <p class="hero__time"><strong>Tú eliges el horario.</strong> Abrimos de 7 am a 7 pm.</p>
         <script>
         /* Variante resuelta ANTES de pintar: sin parpadeo ni CLS en el H1. */
         (function () {
           var root = document.getElementById('kog');
           var V = {
-            "general": { "meta": "Granjas Palo Alto, Cuajimalpa · de 45 días a 6 años", "h1": "Ves a tu peque en vivo, de 7 a 7", "sub": "Guardería y kínder bilingüe en Granjas Palo Alto, a minutos de {zona}: 22 cámaras en tiempo real, inglés diario y Kínder incorporado a la SEP.", "blocks": ["camaras", "horario", "etapas", "cerca", "instalaciones", "faq"], "faq": [1, 2, 3, 4, 5, 6, 7, 8], "stage": "", "tipo": "guardería o kínder", "interes": "guardería / kínder", "title": "Guardería y Kínder bilingüe en Palo Alto | Kids on Going" },
-            "guarderia-cerca": { "meta": "Guardería en Granjas Palo Alto, Cuajimalpa · desde 45 días", "h1": "La guardería cerca que ves en vivo", "sub": "A minutos de {zona}: 22 cámaras desde tu celular, abierta de 7:00 a 7:00 pm y con 4 horarios de salida.", "blocks": ["cerca", "camaras", "horario", "etapas", "instalaciones", "faq"], "faq": [1, 2, 8, 4, 7, 5, 3, 6], "stage": "", "tipo": "guardería", "interes": "la guardería", "title": "Guardería cerca de ti en Palo Alto, Cuajimalpa | Kids on Going" },
-            "kinder-cerca": { "meta": "Kínder incorporado a la SEP · 3 a 6 años · Granjas Palo Alto", "h1": "Kínder SEP cerca de ti, hasta las 7", "sub": "En Granjas Palo Alto, a minutos de {zona}. Grupos de alrededor de 12 niños, inglés diario y Kids&Us desde Kínder 1.", "blocks": ["cerca", "kinder", "horario", "bilingue", "instalaciones", "faq"], "faq": [1, 3, 4, 5, 6, 2, 7, 8], "stage": "kinder", "tipo": "kínder", "interes": "el kínder", "title": "Kínder SEP cerca de ti en Palo Alto, Cuajimalpa | Kids on Going" },
-            "kinder-bilingue": { "meta": "Kínder bilingüe incorporado a la SEP · Granjas Palo Alto", "h1": "Kínder bilingüe con inglés diario", "sub": "Kids&Us desde Kínder 1 y Reggio Emilia con estructura: Bee-Bot, Atelier y Huerto, en grupos de alrededor de 12 niños. A minutos de {zona}.", "blocks": ["bilingue", "kinder", "instalaciones", "horario", "cerca", "faq"], "faq": [3, 1, 6, 5, 4, 2, 7, 8], "stage": "kinder", "tipo": "kínder", "interes": "el kínder bilingüe", "title": "Kínder bilingüe SEP en Palo Alto, Cuajimalpa | Kids on Going" },
-            "guarderia-bilingue": { "meta": "Guardería bilingüe desde 45 días · Granjas Palo Alto", "h1": "Guardería bilingüe desde bebés", "sub": "Inglés todos los días desde los 45 días, y tú lo ves en vivo: 22 cámaras y bitácora minuto a minuto en la App KoG.", "blocks": ["bilingue", "camaras", "etapas", "horario", "cerca", "faq"], "faq": [1, 2, 8, 7, 4, 5, 3, 6], "stage": "", "tipo": "guardería", "interes": "la guardería bilingüe", "title": "Guardería bilingüe en Palo Alto, Cuajimalpa | Kids on Going" },
-            "maternal": { "meta": "Maternal y estimulación temprana · 45 días a 3 años", "h1": "Maternal cerca de ti, con bitácora", "sub": "Estimulación temprana, sala multisensorial y huerto en Granjas Palo Alto. Biberón, pañal y siesta registrados minuto a minuto en la App KoG.", "blocks": ["etapas", "camaras", "horario", "cerca", "instalaciones", "faq"], "faq": [8, 2, 7, 1, 4, 5, 3, 6], "stage": "", "tipo": "maternal", "interes": "maternal / estimulación temprana", "title": "Maternal y estimulación temprana en Palo Alto | Kids on Going" }
+            "general": { "h1": "Ves a tu peque en vivo, de 7 a 7", "sub": "Guardería y Kínder bilingüe: 22 cámaras en tiempo real, doble programa de Inglés, filosofía Reggio Emilia, comedor incluido, Kínder incorporado a la SEP, 700 mts de jardín.", "blocks": ["camaras", "horario", "etapas", "cerca", "instalaciones", "faq"], "faq": [1, 2, 3, 4, 5, 6, 7, 8], "stage": "", "tipo": "guardería o kínder", "interes": "guardería / kínder", "title": "Guardería y Kínder bilingüe en Palo Alto | Kids on Going" },
+            "guarderia-cerca": { "h1": "La guardería cerca que ves en vivo", "sub": "Guardería bilingüe desde 45 días: 22 cámaras en tiempo real desde tu celular, inglés diario, filosofía Reggio Emilia, comedor incluido y 700 mts de jardín.", "blocks": ["cerca", "camaras", "horario", "etapas", "instalaciones", "faq"], "faq": [1, 2, 8, 4, 7, 5, 3, 6], "stage": "", "tipo": "guardería", "interes": "la guardería", "title": "Guardería cerca de ti en Palo Alto, Cuajimalpa | Kids on Going" },
+            "kinder-cerca": { "h1": "Kínder incorporado a SEP, cerca de ti, hasta las 7", "sub": "Kínder bilingüe: doble programa de Inglés, filosofía Reggio Emilia, grupos de alrededor de 12 niños, comedor incluido y 700 mts de jardín.", "blocks": ["cerca", "kinder", "horario", "bilingue", "instalaciones", "faq"], "faq": [1, 3, 4, 5, 6, 2, 7, 8], "stage": "kinder", "tipo": "kínder", "interes": "el kínder", "title": "Kínder incorporado a SEP cerca de ti | Kids on Going" },
+            "kinder-bilingue": { "h1": "Kínder bilingüe con doble programa de Inglés", "sub": "Kids & Us y maestro de inglés especializado en el plantel, filosofía Reggio Emilia con Bee-Bot, Atelier y Huerto, y Kínder incorporado a la SEP.", "blocks": ["bilingue", "kinder", "instalaciones", "horario", "cerca", "faq"], "faq": [3, 1, 6, 5, 4, 2, 7, 8], "stage": "kinder", "tipo": "kínder", "interes": "el kínder bilingüe", "title": "Kínder bilingüe incorporado a SEP | Kids on Going" },
+            "guarderia-bilingue": { "h1": "Guardería bilingüe desde bebés", "sub": "Inglés diario desde los 45 días con nuestro maestro de inglés, Kids & Us opcional desde Toddlers, 22 cámaras en tiempo real y comedor incluido.", "blocks": ["bilingue", "camaras", "etapas", "horario", "cerca", "faq"], "faq": [1, 2, 8, 7, 4, 5, 3, 6], "stage": "", "tipo": "guardería", "interes": "la guardería bilingüe", "title": "Guardería bilingüe en Palo Alto, Cuajimalpa | Kids on Going" },
+            "maternal": { "h1": "Maternal cerca de ti, con bitácora", "sub": "Estimulación temprana, sala multisensorial y huerto. Biberón, pañal y siesta registrados minuto a minuto en la App KoG, con 22 cámaras en tiempo real y comedor incluido.", "blocks": ["etapas", "camaras", "horario", "cerca", "instalaciones", "faq"], "faq": [8, 2, 7, 1, 4, 5, 3, 6], "stage": "", "tipo": "maternal", "interes": "maternal / estimulación temprana", "title": "Maternal y estimulación temprana en Palo Alto | Kids on Going" }
           };
           var ZONAS = { santafe: "Santa Fe", bosques: "Bosques de las Lomas", cuajimalpa: "Cuajimalpa", vistahermosa: "Lomas de Vista Hermosa", contadero: "El Contadero", interlomas: "Interlomas" };
           function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[+_]/g, ' '); }
@@ -566,7 +578,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <button class="qbtn" type="button" data-open-lead data-stage="bebes" data-cta="hero_bebes">Bebé<small>45 días a 1 año</small></button>
             <button class="qbtn" type="button" data-open-lead data-stage="toddlers" data-cta="hero_toddlers">1 a 2 años<small>Toddlers</small></button>
             <button class="qbtn" type="button" data-open-lead data-stage="discovery" data-cta="hero_discovery">2 a 3 años<small>Discovery Preschool</small></button>
-            <button class="qbtn" type="button" data-open-lead data-stage="kinder" data-cta="hero_kinder">3 a 6 años<small>Kínder 1, 2 y 3</small></button>
+            <button class="qbtn" type="button" data-open-lead data-stage="k1" data-cta="hero_k1">3 años<small>Kínder 1</small></button>
+            <button class="qbtn" type="button" data-open-lead data-stage="k2" data-cta="hero_k2">4 años<small>Kínder 2</small></button>
+            <button class="qbtn" type="button" data-open-lead data-stage="k3" data-cta="hero_k3">5 años<small>Kínder 3</small></button>
           </div>
           <p class="starter__more">Agenda tu recorrido de 45 min por WhatsApp, sin compromiso</p>
         </div>
@@ -575,7 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cams-live__view">
             <img class="is-on" data-cam="atelier" src="../assets/img/atelier-1200.webp" srcset="../assets/img/atelier-560.webp 560w, ../assets/img/atelier-1200.webp 1200w" sizes="(min-width: 1024px) 600px, 100vw" width="1200" height="900" alt="Atelier de Kids on Going con mesas de trabajo, caballetes y libreros de madera" fetchpriority="high" decoding="async">
             <img data-cam="aula" src="../assets/img/aula-560.webp" width="560" height="420" alt="Aula con mesa central, piso de madera y trabajos de los niños" loading="lazy" decoding="async">
-            <img data-cam="jardin" src="../assets/img/jardin-560.webp" width="560" height="700" alt="Rueda de la fortuna decorativa en el jardín de Kids on Going" loading="lazy" decoding="async">
+            <img data-cam="jardin" src="../assets/img/jardin-futbol-560.webp" width="560" height="700" alt="Niños jugando futbol en el jardín de pasto de Kids on Going" loading="lazy" decoding="async">
             <img data-cam="huerto" src="../assets/img/huerto-560.webp" width="560" height="700" alt="Niño con sombrero cuidando lechugas en el huerto" loading="lazy" decoding="async">
             <span class="cams-live__tag"><i class="cams-live__dot" aria-hidden="true"></i>Así se ve en la App · <span data-cam-name>Atelier</span></span>
             <span class="cams-live__feed" aria-hidden="true">
@@ -592,10 +606,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <figcaption>Fotos reales del plantel, como las verías en la App KoG: 22 cámaras en tiempo real desde tu celular.</figcaption>
         </figure>
-        <ul class="proof" aria-label="Lo esencial de Kids on Going">
-          <li><i style="background:var(--pastel-lilac)"></i>Kínder incorporado a la SEP</li>
-          <li><i style="background:var(--pastel-apricot)"></i>De 7:00 am a 7:00 pm</li>
-          <li><i style="background:var(--pastel-pistachio)"></i>Inglés diario</li>
+        <ul class="proof" aria-label="Beneficio corporativo">
           <li><i style="background:var(--sky)"></i>Convenios con +50 empresas</li>
         </ul>
       </div>
@@ -629,7 +640,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <button class="qbtn" type="button" data-stage-pick="bebes">Bebé<small>45 días a 1 año</small></button>
             <button class="qbtn" type="button" data-stage-pick="toddlers">1 a 2 años<small>Toddlers</small></button>
             <button class="qbtn" type="button" data-stage-pick="discovery">2 a 3 años<small>Discovery Preschool</small></button>
-            <button class="qbtn" type="button" data-stage-pick="kinder">3 a 6 años<small>Kínder 1, 2 y 3</small></button>
+            <button class="qbtn" type="button" data-stage-pick="k1">3 años<small>Kínder 1</small></button>
+            <button class="qbtn" type="button" data-stage-pick="k2">4 años<small>Kínder 2</small></button>
+            <button class="qbtn" type="button" data-stage-pick="k3">5 años<small>Kínder 3</small></button>
           </div>
           <div data-ctl="2" class="quick quick--2" role="group" aria-label="Horario para tu visita" hidden>
             <button class="qbtn" type="button" data-when-pick="manana">Entre semana, en la mañana</button>
@@ -665,7 +678,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul class="stats__list">
         <li><b data-count="22">22</b><span>cámaras en tiempo real</span></li>
         <li><b data-count="12">12</b><span>horas continuas, de 7:00 am a 7:00 pm</span></li>
-        <li><b data-count="4">4</b><span>horarios de salida</span></li>
+        <li><b data-count="5">5</b><span>horarios de salida</span></li>
         <li><b data-count="700" data-suffix=" m²">700 m²</b><span>de jardín para jugar al aire libre</span></li>
       </ul>
     </div>
@@ -731,7 +744,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><span><b>Acceso desde tu celular</b> a las cámaras en tiempo real.</span></li>
             <li><span><b>En tu visita te lo mostramos funcionando.</b></span></li>
           </ul>
-          <div class="block__cta"><button class="btn btn--cta" type="button" data-open-lead data-cta="camaras"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Ver las cámaras en mi visita</button></div>
+          <div class="block__cta"><button class="btn btn--cta" type="button" data-open-lead data-cta="camaras"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agenda tu visita y te mostramos las cámaras</button></div>
         </div>
         <figure data-rise style="margin:0;--d:100ms">
           <div class="phone" data-ui aria-hidden="true">
@@ -758,27 +771,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="block" id="b-horario" data-block="horario" aria-labelledby="h-horario">
       <div class="container">
         <h2 id="h-horario" data-rise>Tu agenda manda, no el horario escolar</h2>
-        <p class="lead" data-rise style="--d:70ms">Abrimos de 7:00 am a 7:00 pm con 4 horarios de salida. Si tu horario cambia, cambias de plan sin cambiar de escuela.</p>
-        <div class="tl" role="img" aria-label="Horario de 7:00 am a 7:00 pm con salidas a la 1:00, 4:00, 5:30 y 7:00 pm, y enfermera en planta de 11:00 am a 7:00 pm" data-rise style="--d:140ms">
+        <p class="lead" data-rise style="--d:70ms"><strong>Tú eliges el horario.</strong> Abrimos de 7 am a 7 pm con 5 horarios de salida: 1:00 pm en guardería, 2:00 pm al terminar el horario escolar de kínder, y 4:00, 5:30 y 7:00 pm. Si tu horario cambia, cambias de plan sin cambiar de escuela.</p>
+        <div class="tl" role="img" aria-label="Horario de 7:00 am a 7:00 pm con salidas a la 1:00 pm (guardería), 2:00 pm (kínder), 4:00, 5:30 y 7:00 pm, y enfermera en planta de 11:00 am a 7:00 pm" data-rise style="--d:140ms">
           <div class="tl__track">
             <span class="tl__nurse"></span>
             <span class="tl__stop" style="left:50%"></span>
+            <span class="tl__stop" style="left:58.33%"></span>
             <span class="tl__stop" style="left:75%"></span>
             <span class="tl__stop" style="left:87.5%"></span>
             <span class="tl__stop" style="left:100%"></span>
           </div>
-          <span class="tl__lbl" style="left:50%">1:00<small>salida</small></span>
+          <span class="tl__lbl" style="left:50%;transform:translateX(-80%)">1:00<small>guardería</small></span>
+          <span class="tl__lbl" style="left:58.33%;transform:translateX(-20%)">2:00<small>kínder</small></span>
           <span class="tl__lbl" style="left:75%">4:00<small>salida</small></span>
           <span class="tl__lbl" style="left:87.5%;transform:translateX(-70%)">5:30</span>
           <span class="tl__lbl" style="left:100%;transform:translateX(-100%);text-align:right">7:00<small>pm</small></span>
           <div class="tl__ends"><span>7:00 am</span><span>7:00 pm</span></div>
         </div>
-        <ul class="tl__exits" aria-hidden="true"><li>1:00 pm</li><li>4:00 pm</li><li>5:30 pm</li><li>7:00 pm</li></ul>
+        <ul class="tl__exits" aria-hidden="true"><li>1:00 pm · guardería</li><li>2:00 pm · kínder</li><li>4:00 pm</li><li>5:30 pm</li><li>7:00 pm</li></ul>
         <div class="tl__legend"><span><i style="background:var(--pastel-apricot);border:3px solid var(--forest)"></i>Horarios de salida</span><span><i style="background:var(--pastel-pistachio)"></i>Enfermera en planta</span></div>
         <div class="facts" data-rise style="--d:200ms">
           <div class="fact"><b>Enfermera en planta</b><span>De 11:00 am a 7:00 pm</span></div>
-          <div class="fact"><b>Comedor</b><span>Menú balanceado</span></div>
-          <div class="fact"><b>Talleres vespertinos</b><span>Para que siga estimulado por la tarde</span></div>
+          <div class="fact"><b>Comedor incluido</b><span>Menú balanceado</span></div>
+        </div>
+        <div class="talleres" data-rise style="--d:240ms">
+          <h3>Talleres extracurriculares opcionales, desde los 2 años</h3>
+          <ul class="talleres__list"><li>Fútbol</li><li>Parkour</li><li>Ballet</li><li>Kids &amp; Us</li></ul>
+          <p>Tienen costo aparte y se eligen por separado; te damos los detalles en tu visita. En Kínder, Kids &amp; Us ya está incluido en el programa.</p>
         </div>
       </div>
     </section>
@@ -788,8 +807,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 id="h-bilingue" data-rise>Inglés todos los días, desde la Sala de Bebés</h2>
         <p class="lead" data-rise style="--d:70ms">Tu peque crece escuchando dos idiomas, con especialistas en cada etapa.</p>
         <div class="bubbles">
-          <div data-rise style="--d:120ms"><span class="bubble__ic" style="background:var(--pastel-apricot)"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><h3>Inglés diario desde bebés</h3><p>Parte del día en todas las etapas, desde los 45 días.</p></div>
-          <div data-rise style="--d:190ms"><span class="bubble__ic" style="background:var(--pastel-pistachio)"><svg aria-hidden="true"><use href="#i-star"/></svg></span><h3>Kids&amp;Us desde Kínder 1</h3><p>Un segundo programa de inglés con especialistas, sumado al inglés diario.</p></div>
+          <div data-rise style="--d:120ms"><span class="bubble__ic" style="background:var(--pastel-apricot)"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><h3>Inglés diario desde bebés</h3><p>Con el maestro de inglés de Kids on Going, desde los 45 días. Kids &amp; Us es opcional desde Toddlers.</p></div>
+          <div data-rise style="--d:190ms"><span class="bubble__ic" style="background:var(--pastel-pistachio)"><svg aria-hidden="true"><use href="#i-star"/></svg></span><h3>Doble programa de Inglés en Kínder</h3><p>Desde Kínder 1: Kids &amp; Us y un maestro de inglés especializado en el plantel, incluidos en el programa.</p></div>
           <div data-rise style="--d:260ms"><span class="bubble__ic" style="background:var(--pastel-lilac)"><svg aria-hidden="true"><use href="#i-bot"/></svg></span><h3>Música, Arte y Bee-Bot</h3><p>Música con un licenciado del Conservatorio Nacional, Arte y robótica Bee-Bot.</p></div>
         </div>
         <div class="block__cta"><button class="btn btn--cta" type="button" data-open-lead data-cta="bilingue"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agendar visita</button></div>
@@ -805,7 +824,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <ul class="ticks" data-rise style="--d:200ms">
             <li><span><b>Grupos de alrededor de 12 niños</b> y un equipo estable acompañado por la Directora.</span></li>
             <li><span><b>Robótica con Bee-Bot</b>, Atelier, Huerto y Sala Multisensorial.</span></li>
-            <li><span><b>Kids&amp;Us desde Kínder 1</b>, además del inglés diario.</span></li>
+            <li><span><b>Doble programa de Inglés desde Kínder 1</b>: Kids &amp; Us y maestro de inglés especializado, incluidos en el programa.</span></li>
             <li><span><b>Taller de Desarrollo Emocional</b> con la Directora: autoestima y manejo de la frustración.</span></li>
             <li><span><b>Preparación integral</b> para la transición a primarias bilingües.</span></li>
           </ul>
@@ -820,9 +839,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="lead" data-rise style="--d:70ms">Desde los 45 días hasta los 6 años. La guardería recibe todo el año según cupo; el kínder, para el ciclo en curso o el siguiente.</p>
         <ul class="stages">
           <li class="stage" data-rise style="--d:100ms"><span class="stage__age" style="background:var(--pastel-lilac)">45 días<br>a 1 año</span><div><h3>Sala de Bebés</h3><p>Inglés diario y bitácora de biberón, pañal y siestas en la App KoG.</p><button type="button" data-open-lead data-stage="bebes" data-cta="etapa_bebes">Agendar visita</button></div></li>
-          <li class="stage" data-rise style="--d:160ms"><span class="stage__age" style="background:var(--pastel-pistachio)">1 a 2 años</span><div><h3>Toddlers</h3><p>Estimulación temprana, sala multisensorial, jardín y huerto.</p><button type="button" data-open-lead data-stage="toddlers" data-cta="etapa_toddlers">Agendar visita</button></div></li>
-          <li class="stage" data-rise style="--d:220ms"><span class="stage__age" style="background:var(--pastel-apricot)">2 a 3 años</span><div><h3>Discovery Preschool</h3><p>Transición Reggio Emilia, inglés diario y talleres desde los 2 años.</p><button type="button" data-open-lead data-stage="discovery" data-cta="etapa_discovery">Agendar visita</button></div></li>
-          <li class="stage" data-rise style="--d:280ms"><span class="stage__age" style="background:#A9D3EF">3 a 6 años</span><div><h3>Kínder 1, 2 y 3</h3><p>Incorporado a la SEP, Kids&amp;Us desde K1 y robótica Bee-Bot.</p><button type="button" data-open-lead data-stage="kinder" data-cta="etapa_kinder">Agendar visita</button></div></li>
+          <li class="stage" data-rise style="--d:160ms"><span class="stage__age" style="background:var(--pastel-pistachio)">1 a 2 años</span><div><h3>Toddlers</h3><p>Estimulación temprana, sala multisensorial, jardín, huerto e inglés diario. Kids &amp; Us opcional.</p><button type="button" data-open-lead data-stage="toddlers" data-cta="etapa_toddlers">Agendar visita</button></div></li>
+          <li class="stage" data-rise style="--d:220ms"><span class="stage__age" style="background:var(--pastel-apricot)">2 a 3 años</span><div><h3>Discovery Preschool</h3><p>Transición Reggio Emilia e inglés diario. Kids &amp; Us y talleres opcionales desde los 2 años.</p><button type="button" data-open-lead data-stage="discovery" data-cta="etapa_discovery">Agendar visita</button></div></li>
+          <li class="stage" data-rise style="--d:280ms"><span class="stage__age" style="background:#A9D3EF">3 a 6 años</span><div><h3>Kínder 1, 2 y 3</h3><p>Incorporado a la SEP, doble programa de Inglés y robótica Bee-Bot.</p><button type="button" data-open-lead data-cta="etapa_kinder">Agendar visita</button></div></li>
         </ul>
       </div>
     </section>
@@ -834,8 +853,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="gallery">
           <figure data-rise style="--d:100ms"><img src="../assets/img/atelier-560.webp" alt="Atelier con mesas, caballetes y materiales de arte" width="560" height="420" loading="lazy" decoding="async"><figcaption>Atelier</figcaption></figure>
           <figure data-rise style="--d:160ms"><img src="../assets/img/aula-560.webp" alt="Aula con mesa central, piso de madera y trabajos de los niños" width="560" height="420" loading="lazy" decoding="async"><figcaption>Aulas</figcaption></figure>
-          <figure data-rise style="--d:220ms"><img src="../assets/img/jardin-560.webp" alt="Rueda de la fortuna decorativa en el jardín de Kids on Going" width="560" height="700" loading="lazy" decoding="async"><figcaption>Jardín de 700 m²</figcaption></figure>
-          <figure data-rise style="--d:280ms"><img src="../assets/img/huerto-560.webp" alt="Niño con sombrero cuidando lechugas en el huerto" width="560" height="700" loading="lazy" decoding="async"><figcaption>Huerto</figcaption></figure>
+          <figure data-rise style="--d:220ms"><img src="../assets/img/jardin-futbol-560.webp" alt="Niños jugando futbol en el jardín de pasto de Kids on Going" width="560" height="700" loading="lazy" decoding="async"><figcaption>Jardín de 700 m²</figcaption></figure>
+          <figure data-rise style="--d:100ms"><img src="../assets/img/jardin-yoga-560.webp" alt="Clase al aire libre en el jardín: niños sobre tapetes de colores frente a su maestra" width="560" height="700" loading="lazy" decoding="async"><figcaption>Clases en el jardín</figcaption></figure>
+          <figure data-rise style="--d:160ms"><img src="../assets/img/huerto-560.webp" alt="Niño con sombrero cuidando lechugas en el huerto" width="560" height="700" loading="lazy" decoding="async"><figcaption>Huerto</figcaption></figure>
+          <figure data-rise style="--d:220ms"><img src="../assets/img/jardin-560.webp" alt="Rueda de la fortuna decorativa en el jardín de Kids on Going" width="560" height="700" loading="lazy" decoding="async"><figcaption>Juegos del jardín</figcaption></figure>
         </div>
         <div class="block__cta" style="justify-content:center"><button class="btn btn--cta" type="button" data-open-lead data-cta="instalaciones"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agenda una visita al plantel</button></div>
       </div>
@@ -854,9 +875,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             <details name="kog-faq" data-faq="2"><summary>¿Puedo ver a mi bebé durante el día?<i aria-hidden="true"></i></summary><p>Sí. Tienes acceso desde tu celular a 22 cámaras en tiempo real y a la App KoG, donde registramos biberones, pañales, siestas, comidas y actividades. En tu visita te lo mostramos funcionando.</p></details>
             
-            <details name="kog-faq" data-faq="3"><summary>Si es Reggio Emilia, ¿solo juegan?<i aria-hidden="true"></i></summary><p>Juegan con estructura: el kínder está incorporado a la SEP (CCT 09PJN0093I), trabajamos robótica con Bee-Bot, inglés diario y Kids&amp;Us desde Kínder 1. Aprenden desde su curiosidad, con objetivos claros por etapa.</p></details>
+            <details name="kog-faq" data-faq="3"><summary>Si es Reggio Emilia, ¿solo juegan?<i aria-hidden="true"></i></summary><p>Juegan con estructura: el kínder está incorporado a la SEP (CCT 09PJN0093I), trabajamos robótica con Bee-Bot y, desde Kínder 1, doble programa de Inglés (Kids &amp; Us y maestro de inglés especializado en el plantel). Aprenden desde su curiosidad, con objetivos claros por etapa.</p></details>
             
-            <details name="kog-faq" data-faq="4"><summary>¿Qué pasa si mi horario cambia?<i aria-hidden="true"></i></summary><p>Abrimos de 7:00 am a 7:00 pm con 4 salidas: 1:00, 4:00, 5:30 y 7:00 pm. Por la tarde hay talleres vespertinos para que tu peque siga estimulado.</p></details>
+            <details name="kog-faq" data-faq="4"><summary>¿Qué pasa si mi horario cambia?<i aria-hidden="true"></i></summary><p>Tú eliges el horario: abrimos de 7:00 am a 7:00 pm con 5 salidas: 1:00 pm (guardería), 2:00 pm (fin del horario escolar de kínder), 4:00, 5:30 y 7:00 pm. Además hay talleres extracurriculares opcionales desde los 2 años.</p></details>
             
             <details name="kog-faq" data-faq="5"><summary>¿Cuántos niños hay por grupo y cambian mucho las misses?<i aria-hidden="true"></i></summary><p>Trabajamos con grupos pequeños, de alrededor de 12 niños, y un equipo estable acompañado de cerca por la Directora.</p></details>
             
@@ -1314,8 +1335,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var typing = log.querySelector('.typing');
   var WA = (root.getAttribute('data-wa') || '').replace(/\D/g, '');
   var ENDPOINT = root.getAttribute('data-lead-endpoint') || '';
-  var STAGES = { bebes: 'Bebé (45 días a 1 año)', toddlers: '1 a 2 años (Toddlers)', discovery: '2 a 3 años (Discovery Preschool)', kinder: '3 a 6 años (Kínder)' };
-  var STAGE_GIFT = { bebes: 'Sala de Bebés', toddlers: 'Toddlers', discovery: 'Discovery Preschool', kinder: 'Kínder 1, 2 y 3' };
+  var STAGES = { bebes: 'Bebé (45 días a 1 año)', toddlers: '1 a 2 años (Toddlers)', discovery: '2 a 3 años (Discovery Preschool)', k1: '3 años (Kínder 1)', k2: '4 años (Kínder 2)', k3: '5 años (Kínder 3)', kinder: '3 a 6 años (Kínder)' };
+  var STAGE_GIFT = { bebes: 'Sala de Bebés', toddlers: 'Toddlers', discovery: 'Discovery Preschool', k1: 'Kínder 1', k2: 'Kínder 2', k3: 'Kínder 3', kinder: 'Kínder 1, 2 y 3' };
   var WHEN = { manana: 'Entre semana, en la mañana', tarde: 'Entre semana, en la tarde' };
   var mq = window.matchMedia('(max-width: 1023.98px)');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
