@@ -340,6 +340,16 @@ html.is-locked { overflow:hidden; }
 .wd .log time { font-weight:500; color:var(--text-muted); font-variant-numeric:tabular-nums; min-width:38px; }
 .wd .log svg { margin-left:auto; width:18px; height:18px; color:var(--forest); }
 .wd .phone__cap { text-align:center; margin-top:1rem; font-size:.8125rem; color:var(--text-secondary); }
+/* Capturas reales de la App (19/11): pantallas 360×744 recortadas de los posts de KoG */
+.wd .phone__screen--real { position:relative; padding:0; aspect-ratio:360 / 744; background:#fff; }
+.wd .phone__screen--real img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top; }
+.wd .phone__screen--real img[hidden] { display:block; opacity:0; visibility:hidden; }
+.wd .phone__screen--real img { transition:opacity 220ms var(--ease-out), visibility 0s linear 0s; }
+.wd .phone__screen--real img[hidden] { transition:opacity 220ms var(--ease-out), visibility 0s linear 220ms; }
+.wd .apptabs { display:flex; justify-content:center; gap:.35rem; margin-top:1rem; }
+.wd .apptabs button { min-height:44px; padding:.5rem 1rem; border:1px solid var(--border-subtle, #D5DED6); border-radius:var(--radius-pill); background:#fff; color:var(--text-primary); font:500 .875rem/1 var(--font-body); cursor:pointer; touch-action:manipulation; -webkit-tap-highlight-color:transparent; transition:transform 120ms var(--ease-out), background-color 160ms var(--ease-out); }
+.wd .apptabs button:active { transform:scale(.97); }
+.wd .apptabs button[aria-selected="true"] { background:var(--forest); border-color:var(--forest); color:#fff; }
 
 /* Horario */
 .wd .tl { position:relative; margin:2.25rem 0 1.25rem; }
@@ -593,8 +603,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="cams-live__tag"><i class="cams-live__dot" aria-hidden="true"></i>Así se ve en la App · <span data-cam-name>Atelier</span></span>
             <span class="cams-live__feed" aria-hidden="true">
               <span class="cams-live__ex">Ejemplo de bitácora</span>
-              <span class="cams-live__note"><svg><use href="#i-check"/></svg>11:30 Alimento completo</span>
-              <span class="cams-live__note"><svg><use href="#i-check"/></svg>13:15 Siesta iniciada</span>
+              <span class="cams-live__note"><svg><use href="#i-check"/></svg>11:32 Chequeo de salud</span>
+              <span class="cams-live__note"><svg><use href="#i-check"/></svg>13:51 Comida</span>
             </span>
           </div>
           <div class="cams-live__tabs" role="tablist" aria-label="Elige una cámara">
@@ -741,30 +751,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h2 id="h-camaras" data-rise>Lo ves en vivo desde tu celular</h2>
           <p class="lead" data-rise style="--d:70ms">22 cámaras en tiempo real y bitácora minuto a minuto en la App KoG. Paz mental sin pedirte confianza a ciegas.</p>
           <ul class="ticks" data-rise style="--d:140ms">
-            <li><span><b>Biberón, pañal, siesta y comidas</b>, registrados durante el día.</span></li>
+            <li><span><b>Chequeo de salud, comidas y fotos de cada actividad</b>, registrados durante el día, con reporte diario.</span></li>
             <li><span><b>Acceso desde tu celular</b> a las cámaras en tiempo real.</span></li>
             <li><span><b>En tu visita te lo mostramos funcionando.</b></span></li>
           </ul>
           <div class="block__cta"><button class="btn btn--cta" type="button" data-open-lead data-cta="camaras"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Agenda tu visita y te mostramos las cámaras</button></div>
         </div>
         <figure data-rise style="margin:0;--d:100ms">
-          <div class="phone" data-ui aria-hidden="true">
-            <div class="phone__screen">
-              <div class="phone__bar"><span>App KoG</span><span>● En vivo</span></div>
-              <div class="appcams">
-                <div class="appcam"><img src="../assets/img/atelier-560.webp" alt="" width="560" height="420" loading="lazy" decoding="async"><span>Atelier</span></div>
-                <div class="appcam"><img src="../assets/img/aula-560.webp" alt="" width="560" height="420" loading="lazy" decoding="async"><span>Aula</span></div>
-                <div class="appcam"><img src="../assets/img/jardin-560.webp" alt="" width="560" height="700" loading="lazy" decoding="async"><span>Jardín</span></div>
-                <div class="appcam"><img src="../assets/img/huerto-560.webp" alt="" width="560" height="700" loading="lazy" decoding="async"><span>Huerto</span></div>
-              </div>
-              <ul class="log">
-                <li><time>09:40</time>Biberón<svg><use href="#i-check"/></svg></li>
-                <li><time>11:30</time>Alimento completo<svg><use href="#i-check"/></svg></li>
-                <li><time>13:15</time>Siesta iniciada<svg><use href="#i-check"/></svg></li>
-              </ul>
+          <div class="phone" data-ui>
+            <div class="phone__screen phone__screen--real">
+              <img class="is-on" id="app-salud" data-app="salud" role="tabpanel" aria-labelledby="tab-app-salud" src="../assets/img/app-salud-360.webp" width="360" height="744" alt="Captura real de la App KoG: chequeo de salud con temperatura de 35.7 °C y foto de la clase de inglés" loading="lazy" decoding="async">
+              <img id="app-comida" data-app="comida" role="tabpanel" aria-labelledby="tab-app-comida" src="../assets/img/app-comida-360.webp" width="360" height="744" alt="Captura real de la App KoG: registro de la comida del día y foto de una actividad de pensamiento científico" loading="lazy" decoding="async" hidden>
+              <img id="app-actividad" data-app="actividad" role="tabpanel" aria-labelledby="tab-app-actividad" src="../assets/img/app-actividad-360.webp" width="360" height="744" alt="Captura real de la App KoG: merienda y foto de una actividad sensorial de trazo de números y letras" loading="lazy" decoding="async" hidden>
             </div>
           </div>
-          <figcaption class="phone__cap">Ilustración de la App KoG con fotos reales del plantel. Horarios de ejemplo.</figcaption>
+          <div class="apptabs" role="tablist" aria-label="Elige qué ver en la App">
+            <button type="button" role="tab" id="tab-app-salud" aria-controls="app-salud" aria-selected="true" data-app-btn="salud">Salud</button>
+            <button type="button" role="tab" id="tab-app-comida" aria-controls="app-comida" aria-selected="false" data-app-btn="comida" tabindex="-1">Comidas</button>
+            <button type="button" role="tab" id="tab-app-actividad" aria-controls="app-actividad" aria-selected="false" data-app-btn="actividad" tabindex="-1">Actividades</button>
+          </div>
+          <figcaption class="phone__cap">Capturas reales de la App KoG. Nombre del alumno difuminado.</figcaption>
         </figure>
       </div>
     </section>
@@ -1559,6 +1565,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     b.addEventListener('keydown', function (e) {
       var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
       if (d) { e.preventDefault(); selectCam(tabs[(i + d + tabs.length) % tabs.length], true); }
+    });
+  });
+
+  /* ---------- App KoG: capturas reales por pestaña (sin evento nuevo de tracking) ---------- */
+  var appTabs = [].slice.call(document.querySelectorAll('[data-app-btn]'));
+  function selectApp(btn, focus) {
+    var id = btn.getAttribute('data-app-btn');
+    appTabs.forEach(function (b) { var on = b === btn; b.setAttribute('aria-selected', on ? 'true' : 'false'); b.tabIndex = on ? 0 : -1; });
+    document.querySelectorAll('[data-app]').forEach(function (img) { img.hidden = img.getAttribute('data-app') !== id; });
+    if (focus) btn.focus();
+  }
+  appTabs.forEach(function (b, i) {
+    b.addEventListener('click', function () { selectApp(b); });
+    b.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (d) { e.preventDefault(); selectApp(appTabs[(i + d + appTabs.length) % appTabs.length], true); }
     });
   });
 
